@@ -1649,167 +1649,150 @@
       class="fixed inset-x-0 top-0 z-[100] transition-all duration-300"
     >
       <div class="mx-auto mt-3 max-w-[1420px] px-4 sm:px-6 lg:px-8">
+        <!-- HEADER -->
         <div
           id="header-shell"
-          class="flex h-[74px] items-center justify-between gap-4 rounded-2xl border border-slate-200/80 bg-white/80 px-4 shadow-soft backdrop-blur-2xl transition-all duration-300 sm:px-5 dark:border-white/10 dark:bg-slate-950/75"
+          class="flex h-[74px] items-center justify-between gap-4 rounded-2xl border border-slate-200/80 bg-white/80 px-4 shadow-soft backdrop-blur-2xl transition-all duration-300 sm:px-5"
         >
-          <a href="#home" class="group flex shrink-0 items-center gap-3">
-            <div
-              class="relative flex h-10 w-10 items-center justify-center overflow-hidden rounded-[13px] bg-slate-950 shadow-lg shadow-blue-600/20 dark:bg-white"
-            >
-              <div
-                class="absolute -right-3 -top-3 h-8 w-8 rounded-full bg-blue-600/70 blur-sm"
-              ></div>
-              <div
-                class="absolute bottom-0 left-0 h-5 w-5 rounded-full bg-cyan-400/70 blur-sm"
-              ></div>
-              <svg
-                viewBox="0 0 40 40"
-                class="relative z-10 h-6 w-6 text-white dark:text-slate-950"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2.2"
-              >
-                <circle cx="20" cy="7.5" r="2.8"></circle>
-                <circle cx="8" cy="29" r="2.8"></circle>
-                <circle cx="32" cy="29" r="2.8"></circle>
-                <path
-                  d="M18.8 10 9.6 26.4M21.2 10 30.4 26.4M10.8 29h18.4"
-                ></path>
-              </svg>
-            </div>
-            <div class="leading-none">
-              <div
-                class="font-display text-[17px] font-extrabold tracking-[-.04em] text-slate-950 dark:text-white"
-              >
-                Synapse<span class="text-blue-600 dark:text-blue-400">.io</span>
-              </div>
-              <div
-                class="mt-1 text-[8px] font-bold uppercase tracking-[.23em] text-slate-400"
-              >
-                Product Engineering
-              </div>
-            </div>
+          <!-- TECHNOWEBS LOGO -->
+          <a
+            href="#home"
+            class="flex shrink-0 items-center"
+            aria-label="TechnoWebs Home"
+          >
+            <img
+              src="data:image/png;base64,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"
+              alt="TechnoWebs"
+              width="339"
+              height="44"
+              class="block h-auto w-[155px] sm:w-[190px]"
+            />
           </a>
 
+          <!-- DESKTOP NAVIGATION -->
           <nav class="hidden items-center gap-1 lg:flex">
             <a
-              class="nav-link active rounded-xl px-3 py-2 text-[15px] font-semibold text-blue-700 transition hover:bg-blue-50 hover:text-blue-700 dark:text-blue-300 dark:hover:bg-blue-500/10 dark:hover:text-blue-300"
+              class="nav-link active rounded-xl px-3 py-2 text-[15px] font-semibold text-blue-700 transition hover:bg-blue-50 hover:text-blue-700"
               href="#home"
-              >Home</a
             >
+              Home
+            </a>
+
             <a
-              class="nav-link rounded-xl px-3 py-2 text-[15px] font-semibold text-slate-600 transition hover:bg-blue-50 hover:text-blue-700 dark:text-slate-300 dark:hover:bg-blue-500/10 dark:hover:text-blue-300"
+              class="nav-link rounded-xl px-3 py-2 text-[15px] font-semibold text-slate-600 transition hover:bg-blue-50 hover:text-blue-700"
               href="#capabilities"
-              >Capabilities</a
             >
+              Capabilities
+            </a>
+
             <a
-              class="nav-link rounded-xl px-3 py-2 text-[15px] font-semibold text-slate-600 transition hover:bg-blue-50 hover:text-blue-700 dark:text-slate-300 dark:hover:bg-blue-500/10 dark:hover:text-blue-300"
+              class="nav-link rounded-xl px-3 py-2 text-[15px] font-semibold text-slate-600 transition hover:bg-blue-50 hover:text-blue-700"
               href="#solutions"
-              >Solutions</a
             >
+              Solutions
+            </a>
+
             <a
-              class="nav-link rounded-xl px-3 py-2 text-[15px] font-semibold text-slate-600 transition hover:bg-blue-50 hover:text-blue-700 dark:text-slate-300 dark:hover:bg-blue-500/10 dark:hover:text-blue-300"
+              class="nav-link rounded-xl px-3 py-2 text-[15px] font-semibold text-slate-600 transition hover:bg-blue-50 hover:text-blue-700"
               href="#work"
-              >Work</a
             >
+              Work
+            </a>
+
             <a
-              class="nav-link rounded-xl px-3 py-2 text-[15px] font-semibold text-slate-600 transition hover:bg-blue-50 hover:text-blue-700 dark:text-slate-300 dark:hover:bg-blue-500/10 dark:hover:text-blue-300"
+              class="nav-link rounded-xl px-3 py-2 text-[15px] font-semibold text-slate-600 transition hover:bg-blue-50 hover:text-blue-700"
               href="#process"
-              >Process</a
             >
+              Process
+            </a>
+
             <a
-              class="nav-link rounded-xl px-3 py-2 text-[15px] font-semibold text-slate-600 transition hover:bg-blue-50 hover:text-blue-700 dark:text-slate-300 dark:hover:bg-blue-500/10 dark:hover:text-blue-300"
+              class="nav-link rounded-xl px-3 py-2 text-[15px] font-semibold text-slate-600 transition hover:bg-blue-50 hover:text-blue-700"
               href="#contact"
-              >Contact</a
             >
+              Contact
+            </a>
           </nav>
 
+          <!-- RIGHT SIDE -->
           <div class="flex items-center gap-2">
-            <div
-              class="hidden items-center gap-2 rounded-full border border-emerald-200 bg-emerald-50 px-3 py-2 md:flex dark:border-emerald-500/20 dark:bg-emerald-500/10"
-            >
-              <span class="relative flex h-2 w-2"
-                ><span
-                  class="pulse-ring absolute inset-0 rounded-full bg-emerald-400"
-                ></span
-                ><span
-                  class="relative h-2 w-2 rounded-full bg-emerald-500"
-                ></span
-              ></span>
-              <span
-                class="text-[9px] font-bold uppercase tracking-[.16em] text-emerald-700 dark:text-emerald-400"
-                >System Online</span
-              >
-            </div>
-            <button
-              id="theme-toggle"
-              type="button"
-              class="hidden h-10 w-10 items-center justify-center rounded-xl border border-slate-200 bg-white text-slate-600 transition hover:-translate-y-0.5 hover:border-blue-300 hover:text-blue-600 md:flex dark:border-white/10 dark:bg-white/5 dark:text-slate-300"
-            >
-              <span
-                id="theme-icon"
-                class="material-symbols-outlined text-[19px]"
-                >dark_mode</span
-              >
-            </button>
+            <!-- START A PROJECT -->
             <a
               href="#contact"
               class="hidden h-10 items-center justify-center rounded-xl bg-blue-600 px-4 text-[12px] font-extrabold text-white shadow-glow transition hover:-translate-y-0.5 hover:bg-blue-700 sm:inline-flex"
-              >Start a project</a
             >
+              Start a project
+            </a>
+
+            <!-- MOBILE MENU BUTTON -->
             <button
               id="menu-toggle"
               type="button"
               aria-label="Open navigation"
               aria-expanded="false"
-              class="flex h-10 w-10 items-center justify-center rounded-xl border border-slate-200 bg-white text-slate-700 transition hover:border-blue-300 hover:text-blue-600 lg:hidden dark:border-white/10 dark:bg-white/5 dark:text-white"
+              class="flex h-10 w-10 items-center justify-center rounded-xl border border-slate-200 bg-white text-slate-700 transition hover:border-blue-300 hover:text-blue-600 lg:hidden"
             >
-              <span id="menu-icon" class="material-symbols-outlined text-[23px]"
-                >menu</span
+              <span
+                id="menu-icon"
+                class="material-symbols-outlined text-[23px]"
               >
+                menu
+              </span>
             </button>
           </div>
         </div>
 
+        <!-- MOBILE MENU -->
         <div
           id="mobile-menu"
-          class="mt-2 hidden overflow-hidden rounded-2xl border border-slate-200 bg-white/95 p-2 shadow-panel backdrop-blur-2xl lg:hidden dark:border-white/10 dark:bg-slate-950/95"
+          class="mt-2 hidden overflow-hidden rounded-2xl border border-slate-200 bg-white/95 p-2 shadow-panel backdrop-blur-2xl lg:hidden"
         >
           <div class="grid gap-1">
             <a
               href="#home"
-              class="mobile-link rounded-xl px-4 py-3 text-[15px] font-bold text-blue-600 hover:bg-blue-50 dark:hover:bg-white/5"
-              >Home</a
+              class="mobile-link rounded-xl px-4 py-3 text-[15px] font-bold text-blue-600 hover:bg-blue-50"
             >
+              Home
+            </a>
+
             <a
               href="#capabilities"
-              class="mobile-link rounded-xl px-4 py-3 text-[15px] font-semibold text-slate-700 hover:bg-blue-50 hover:text-blue-700 dark:text-slate-200 dark:hover:bg-blue-500/10 dark:hover:text-blue-300"
-              >Capabilities</a
+              class="mobile-link rounded-xl px-4 py-3 text-[15px] font-semibold text-slate-700 hover:bg-blue-50 hover:text-blue-700"
             >
+              Capabilities
+            </a>
+
             <a
               href="#solutions"
-              class="mobile-link rounded-xl px-4 py-3 text-[15px] font-semibold text-slate-700 hover:bg-blue-50 hover:text-blue-700 dark:text-slate-200 dark:hover:bg-blue-500/10 dark:hover:text-blue-300"
-              >Solutions</a
+              class="mobile-link rounded-xl px-4 py-3 text-[15px] font-semibold text-slate-700 hover:bg-blue-50 hover:text-blue-700"
             >
+              Solutions
+            </a>
+
             <a
               href="#work"
-              class="mobile-link rounded-xl px-4 py-3 text-[15px] font-semibold text-slate-700 hover:bg-blue-50 hover:text-blue-700 dark:text-slate-200 dark:hover:bg-blue-500/10 dark:hover:text-blue-300"
-              >Work</a
+              class="mobile-link rounded-xl px-4 py-3 text-[15px] font-semibold text-slate-700 hover:bg-blue-50 hover:text-blue-700"
             >
+              Work
+            </a>
+
             <a
               href="#process"
-              class="mobile-link rounded-xl px-4 py-3 text-[15px] font-semibold text-slate-700 hover:bg-blue-50 hover:text-blue-700 dark:text-slate-200 dark:hover:bg-blue-500/10 dark:hover:text-blue-300"
-              >Process</a
+              class="mobile-link rounded-xl px-4 py-3 text-[15px] font-semibold text-slate-700 hover:bg-blue-50 hover:text-blue-700"
             >
+              Process
+            </a>
+
             <a
               href="#contact"
               class="mobile-link mobile-cta mt-2 inline-flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-blue-600 via-indigo-600 to-cyan-500 px-4 py-3.5 text-[15px] font-extrabold text-white shadow-[0_14px_35px_-18px_rgba(37,99,235,.8)] transition duration-300 hover:-translate-y-0.5 hover:from-blue-500 hover:via-indigo-500 hover:to-cyan-400 focus:outline-none focus:ring-2 focus:ring-cyan-400/70"
-              >Start a project
-              <span class="material-symbols-outlined text-[19px]"
-                >arrow_forward</span
-              ></a
             >
+              Start a project
+
+              <span class="material-symbols-outlined text-[19px]">
+                arrow_forward
+              </span>
+            </a>
           </div>
         </div>
       </div>
@@ -1819,16 +1802,22 @@
       <!-- HERO -->
       <section
         id="home"
-        class="relative isolate overflow-hidden border-b border-slate-200 scroll-mt-24 dark:border-white/10"
+        class="relative isolate overflow-hidden scroll-mt-24"
+        style="background-color: rgb(244, 247, 254)"
       >
-        <div class="absolute inset-0 bg-white dark:bg-[#050913]"></div>
-        <div class="absolute inset-0 grid-bg opacity-80"></div>
+        <div
+          class="absolute inset-0 hidden dark:block"
+          style="background-color: rgb(5, 9, 19)"
+        ></div>
+
         <div
           class="hero-orb absolute -left-32 top-40 h-[420px] w-[420px] rounded-full bg-blue-500/15 blur-[100px]"
         ></div>
+
         <div
           class="hero-orb-2 absolute -right-24 top-20 h-[420px] w-[420px] rounded-full bg-cyan-400/10 blur-[100px]"
         ></div>
+
         <div
           class="absolute bottom-[-160px] left-1/2 h-[360px] w-[560px] -translate-x-1/2 rounded-full bg-indigo-500/10 blur-[110px]"
         ></div>
@@ -1839,31 +1828,37 @@
           <div
             class="grid items-center gap-14 xl:grid-cols-[1.02fr_.98fr] xl:gap-16"
           >
+            <!-- LEFT -->
             <div class="reveal">
+              <!-- Badge -->
               <div
                 class="mb-6 inline-flex items-center gap-2 rounded-full border border-blue-200 bg-blue-50/90 px-3.5 py-2 text-[9px] font-bold uppercase tracking-[.17em] text-blue-700 shadow-sm dark:border-blue-500/20 dark:bg-blue-500/10 dark:text-blue-300"
               >
-                <span class="relative flex h-2 w-2"
-                  ><span
+                <span class="relative flex h-2 w-2">
+                  <span
                     class="absolute inset-0 animate-ping rounded-full bg-blue-400"
-                  ></span
-                  ><span
+                  ></span>
+                  <span
                     class="relative h-2 w-2 rounded-full bg-blue-600"
-                  ></span
-                ></span>
+                  ></span>
+                </span>
+
                 Software systems for the next stage of growth
               </div>
 
+              <!-- Heading -->
               <h1
                 class="font-display max-w-4xl text-[2.65rem] font-extrabold leading-[1.03] tracking-[-.055em] text-slate-950 sm:text-5xl md:text-6xl lg:text-[72px] dark:text-white"
               >
                 We engineer the digital systems that make ambitious companies
                 <span
                   class="bg-gradient-to-r from-blue-600 via-cyan-500 to-indigo-600 bg-clip-text text-transparent"
-                  >look impossible to stop.</span
                 >
+                  look impossible to stop.
+                </span>
               </h1>
 
+              <!-- Description -->
               <p
                 class="mt-7 max-w-2xl text-[15px] leading-7 text-slate-600 sm:text-[17px] sm:leading-8 dark:text-slate-300"
               >
@@ -1872,29 +1867,36 @@
                 system, not a pile of disconnected features.
               </p>
 
+              <!-- Buttons -->
               <div class="mt-9 flex flex-col gap-3 sm:flex-row">
                 <a
                   href="#contact"
                   class="group inline-flex h-13 items-center justify-center gap-2 rounded-2xl bg-blue-600 px-6 py-3.5 text-sm font-extrabold text-white shadow-glow transition duration-300 hover:-translate-y-1 hover:bg-blue-700"
                 >
                   Build with Synapse
+
                   <span
                     class="material-symbols-outlined text-[18px] transition-transform group-hover:translate-x-1"
-                    >arrow_forward</span
                   >
+                    arrow_forward
+                  </span>
                 </a>
+
                 <a
                   href="#work"
                   class="group inline-flex h-13 items-center justify-center gap-2 rounded-2xl border border-slate-200 bg-white px-6 py-3.5 text-sm font-extrabold text-slate-800 shadow-sm transition duration-300 hover:-translate-y-1 hover:border-blue-200 hover:bg-blue-50 hover:text-blue-700 dark:border-white/10 dark:bg-white/5 dark:text-white dark:hover:bg-white/10"
                 >
                   Explore case studies
+
                   <span
                     class="material-symbols-outlined text-[18px] transition-transform group-hover:translate-x-1 group-hover:-translate-y-1"
-                    >north_east</span
                   >
+                    north_east
+                  </span>
                 </a>
               </div>
 
+              <!-- Stats -->
               <div
                 class="mt-9 flex flex-wrap items-center gap-x-7 gap-y-5 border-t border-slate-200 pt-6 dark:border-white/10"
               >
@@ -1906,15 +1908,18 @@
                   >
                     0
                   </div>
+
                   <div
                     class="mt-1 text-[10px] font-semibold uppercase tracking-[.12em] text-slate-400"
                   >
                     Projects shipped
                   </div>
                 </div>
+
                 <div
                   class="hidden h-9 w-px bg-slate-200 sm:block dark:bg-white/10"
                 ></div>
+
                 <div>
                   <div
                     class="counter font-display text-2xl font-extrabold tracking-tight"
@@ -1923,21 +1928,25 @@
                   >
                     0
                   </div>
+
                   <div
                     class="mt-1 text-[10px] font-semibold uppercase tracking-[.12em] text-slate-400"
                   >
                     Retention
                   </div>
                 </div>
+
                 <div
                   class="hidden h-9 w-px bg-slate-200 sm:block dark:bg-white/10"
                 ></div>
+
                 <div>
                   <div
                     class="font-display text-xl font-extrabold tracking-tight text-amber-500"
                   >
                     4.9/5
                   </div>
+
                   <div
                     class="mt-1 text-[10px] font-semibold uppercase tracking-[.12em] text-slate-400"
                   >
@@ -1947,208 +1956,548 @@
               </div>
             </div>
 
+            <!-- RIGHT -->
             <div class="reveal delay-2 relative">
-              <div
-                class="hero-visual tilt relative mx-auto max-w-[650px] transition duration-700 ease-out"
-              >
+              <div class="relative mx-auto max-w-[650px]">
+                <!-- Glow -->
                 <div
-                  class="absolute -inset-8 rounded-[3rem] bg-gradient-to-r from-blue-500/15 via-cyan-400/10 to-indigo-500/15 blur-3xl"
+                  class="pointer-events-none absolute -inset-8 rounded-[3rem] bg-gradient-to-r from-blue-500/15 via-cyan-400/10 to-indigo-500/15 blur-3xl"
                 ></div>
-                <div
-                  class="relative rounded-[2rem] border border-slate-800/80 bg-[#070c16] p-2 shadow-panel"
-                >
+
+                <div class="relative w-full" id="tw-stage">
+                  <!-- Floating card 1 -->
                   <div
-                    class="flex items-center justify-between rounded-[1.45rem] border border-white/5 bg-white/[.03] px-4 py-3"
+                    class="pointer-events-none absolute z-20 flex flex-col gap-0.5 rounded-[14px] border border-slate-900/10 bg-white px-3.5 py-2.5 shadow-[0_20px_40px_-20px_rgba(15,23,42,0.25)] top-[18px] -left-[22px]"
                   >
-                    <div class="flex items-center gap-2">
-                      <span class="h-2.5 w-2.5 rounded-full bg-rose-400"></span
-                      ><span
-                        class="h-2.5 w-2.5 rounded-full bg-amber-300"
-                      ></span
-                      ><span
-                        class="h-2.5 w-2.5 rounded-full bg-emerald-400"
-                      ></span>
-                      <span class="ml-2 font-mono text-[9px] text-slate-500"
-                        >synapse / command-center</span
-                      >
-                    </div>
-                    <div
-                      class="flex items-center gap-2 rounded-full bg-emerald-500/10 px-2.5 py-1 text-[9px] font-bold text-emerald-300"
+                    <small
+                      class="text-[9px] font-bold uppercase tracking-[0.08em] text-slate-500"
                     >
+                      Projects launched
+                    </small>
+
+                    <b
+                      class="text-base font-extrabold tracking-[-0.02em] text-slate-900"
+                    >
+                      600+
+                    </b>
+                  </div>
+
+                  <!-- Floating card 2 -->
+                  <div
+                    class="pointer-events-none absolute z-20 flex flex-col gap-0.5 rounded-[14px] border border-slate-900/10 bg-white px-3.5 py-2.5 shadow-[0_20px_40px_-20px_rgba(15,23,42,0.25)] top-[46px] -right-[18px]"
+                  >
+                    <small
+                      class="text-[9px] font-bold uppercase tracking-[0.08em] text-slate-500"
+                    >
+                      On-time delivery
+                    </small>
+
+                    <b
+                      class="text-base font-extrabold tracking-[-0.02em]"
+                      style="color: #059669"
+                    >
+                      ✓ Always
+                    </b>
+                  </div>
+
+                  <!-- DEVICE -->
+                  <div
+                    id="tw-dev"
+                    class="relative z-10 rounded-3xl border border-slate-900/90 bg-[#070c16] p-2 shadow-[0_30px_60px_-30px_rgba(2,6,23,0.6),inset_0_0_0_1px_rgba(255,255,255,0.03)]"
+                  >
+                    <!-- Browser -->
+                    <div
+                      class="flex items-center gap-3 rounded-[18px] border border-white/5 bg-white/[0.03] px-3.5 py-2.5"
+                    >
+                      <div class="flex gap-1.5">
+                        <i
+                          class="block h-2.5 w-2.5 rounded-full bg-rose-400"
+                        ></i>
+
+                        <i
+                          class="block h-2.5 w-2.5 rounded-full bg-amber-300"
+                        ></i>
+
+                        <i
+                          class="block h-2.5 w-2.5 rounded-full bg-emerald-400"
+                        ></i>
+                      </div>
+
+                      <div
+                        class="flex-1 truncate rounded-lg border border-white/5 bg-white/[0.03] px-2.5 py-1 text-center font-mono text-[10px] text-slate-400"
+                      >
+                        🔒 your-business.app/dashboard
+                      </div>
+
                       <span
-                        class="h-1.5 w-1.5 rounded-full bg-emerald-400"
-                      ></span
-                      >99.99% HEALTH
+                        id="tw-live"
+                        class="shrink-0 rounded-full bg-blue-400/10 px-2 py-1 text-[9px] font-bold tracking-[0.1em] text-blue-300"
+                      >
+                        ● DEMO
+                      </span>
                     </div>
-                  </div>
 
-                  <div class="grid gap-2 p-2 sm:grid-cols-[1.6fr_1fr]">
-                    <div
-                      class="overflow-hidden rounded-2xl border border-white/5 bg-[#0c1322] p-4 sm:p-5"
-                    >
-                      <div class="flex items-center justify-between gap-3">
-                        <div>
+                    <!-- SCREEN -->
+                    <div class="p-3.5">
+                      <!-- =========================================
+                     TABS
+                ========================================== -->
+                      <div
+                        id="tw-tabs"
+                        class="relative z-[100] mb-4 flex gap-1.5 rounded-xl border border-white/5 bg-white/[0.03] p-1 pointer-events-auto"
+                      >
+                        <button
+                          type="button"
+                          class="tw-tab relative z-[101] flex-1 cursor-pointer select-none rounded-lg border-0 bg-transparent px-3 py-2.5 text-[11px] font-bold text-slate-400 transition-all duration-200 hover:bg-white/5 hover:text-slate-200"
+                          data-k="0"
+                        >
+                          ERP &amp; Billing
+                        </button>
+
+                        <button
+                          type="button"
+                          class="tw-tab relative z-[101] flex-1 cursor-pointer select-none rounded-lg border-0 bg-transparent px-3 py-2.5 text-[11px] font-bold text-slate-400 transition-all duration-200 hover:bg-white/5 hover:text-slate-200"
+                          data-k="1"
+                        >
+                          AI Automation
+                        </button>
+
+                        <button
+                          type="button"
+                          class="tw-tab relative z-[101] flex-1 cursor-pointer select-none rounded-lg border-0 bg-transparent px-3 py-2.5 text-[11px] font-bold text-slate-400 transition-all duration-200 hover:bg-white/5 hover:text-slate-200"
+                          data-k="2"
+                        >
+                          Website Traffic
+                        </button>
+                      </div>
+
+                      <!-- =========================================
+                     SCREEN 0 — ERP
+                ========================================== -->
+                      <div class="tw-screen hidden min-h-[260px]" data-k="0">
+                        <!-- ERP STATS -->
+                        <div class="mb-3 grid grid-cols-2 gap-2 sm:grid-cols-3">
+                          <!-- Monthly Volume -->
                           <div
-                            class="text-[9px] font-bold uppercase tracking-[.18em] text-slate-500"
+                            class="rounded-xl border border-white/5 bg-white/[0.03] p-3"
                           >
-                            Platform activity
-                          </div>
-                          <div
-                            class="mt-1 font-display text-2xl font-extrabold text-white"
-                          >
-                            5.2M
-                            <span class="text-sm font-bold text-cyan-300"
-                              >req/s</span
+                            <small
+                              class="mb-1.5 block text-[9px] font-bold uppercase tracking-[0.1em] text-slate-500"
                             >
+                              Monthly Volume
+                            </small>
+
+                            <b
+                              class="block text-base font-extrabold leading-none tracking-[-0.03em] text-white sm:text-xl"
+                            >
+                              ₹48.4L
+                            </b>
+
+                            <span
+                              class="mt-1 block text-[9px] text-emerald-400"
+                            >
+                              ↑ sample growth
+                            </span>
+                          </div>
+
+                          <!-- Active Instances -->
+                          <div
+                            class="rounded-xl border border-white/5 bg-white/[0.03] p-3"
+                          >
+                            <small
+                              class="mb-1.5 block text-[9px] font-bold uppercase tracking-[0.1em] text-slate-500"
+                            >
+                              Active Instances
+                            </small>
+
+                            <b
+                              class="block text-base font-extrabold leading-none tracking-[-0.03em] text-white sm:text-xl"
+                            >
+                              512
+                            </b>
+
+                            <span
+                              class="mt-1 block text-[9px] text-emerald-400"
+                            >
+                              <span class="mr-1">●</span>0 faults
+                            </span>
+                          </div>
+
+                          <!-- Security Score -->
+                          <div
+                            class="col-span-2 rounded-xl border border-white/5 bg-white/[0.03] p-3 sm:col-span-1"
+                          >
+                            <small
+                              class="mb-1.5 block text-[9px] font-bold uppercase tracking-[0.1em] text-slate-500"
+                            >
+                              Security Score
+                            </small>
+
+                            <b
+                              class="block text-base font-extrabold leading-none tracking-[-0.03em] text-white sm:text-xl"
+                            >
+                              99/100
+                            </b>
+
+                            <span
+                              class="mt-1 block text-[9px] text-emerald-400"
+                            >
+                              Fast load times
+                            </span>
                           </div>
                         </div>
-                        <span
-                          class="material-symbols-outlined rounded-xl bg-blue-500/10 p-2 text-blue-300"
-                          >monitoring</span
-                        >
-                      </div>
-                      <div class="mt-7 flex h-44 items-end gap-1.5 sm:h-52">
-                        <span
-                          class="w-full rounded-t-md bg-blue-500/30"
-                          style="height: 30%"
-                        ></span
-                        ><span
-                          class="w-full rounded-t-md bg-blue-500/40"
-                          style="height: 43%"
-                        ></span
-                        ><span
-                          class="w-full rounded-t-md bg-cyan-400/45"
-                          style="height: 36%"
-                        ></span
-                        ><span
-                          class="w-full rounded-t-md bg-blue-500/60"
-                          style="height: 58%"
-                        ></span
-                        ><span
-                          class="w-full rounded-t-md bg-blue-500/60"
-                          style="height: 54%"
-                        ></span
-                        ><span
-                          class="w-full rounded-t-md bg-cyan-400/70"
-                          style="height: 68%"
-                        ></span
-                        ><span
-                          class="w-full rounded-t-md bg-blue-500/80"
-                          style="height: 78%"
-                        ></span
-                        ><span
-                          class="w-full rounded-t-md bg-blue-500/90"
-                          style="height: 87%"
-                        ></span
-                        ><span
-                          class="w-full rounded-t-md bg-cyan-400"
-                          style="height: 95%"
-                        ></span>
-                      </div>
-                      <div
-                        class="mt-3 flex justify-between font-mono text-[8px] text-slate-600"
-                      >
-                        <span>09:00</span><span>12:00</span><span>15:00</span
-                        ><span>18:00</span><span>Now</span>
-                      </div>
-                    </div>
 
-                    <div class="grid gap-2">
-                      <div
-                        class="rounded-2xl border border-white/5 bg-[#0c1322] p-4"
-                      >
-                        <div class="flex items-center justify-between">
-                          <span
-                            class="text-[9px] font-bold uppercase tracking-[.15em] text-slate-500"
-                            >Latency</span
-                          ><span
-                            class="material-symbols-outlined text-[18px] text-cyan-300"
-                            >bolt</span
-                          >
-                        </div>
+                        <!-- ERP GRAPH -->
                         <div
-                          class="mt-3 font-display text-2xl font-extrabold text-white"
+                          class="flex h-[110px] items-end gap-1.5 rounded-xl border border-white/5 bg-white/[0.02] p-3 sm:h-[140px]"
                         >
-                          42<span class="text-sm text-slate-500">ms</span>
-                        </div>
-                        <div class="mt-2 h-1.5 rounded-full bg-white/5">
-                          <div
-                            class="h-full w-[76%] rounded-full bg-gradient-to-r from-cyan-400 to-blue-500"
-                          ></div>
-                        </div>
-                      </div>
-                      <div
-                        class="rounded-2xl border border-white/5 bg-[#0c1322] p-4"
-                      >
-                        <div class="flex items-center justify-between">
-                          <span
-                            class="text-[9px] font-bold uppercase tracking-[.15em] text-slate-500"
-                            >Conversion</span
-                          ><span
-                            class="material-symbols-outlined text-[18px] text-emerald-300"
-                            >trending_up</span
-                          >
-                        </div>
-                        <div
-                          class="mt-3 font-display text-2xl font-extrabold text-white"
-                        >
-                          48.6<span class="text-sm text-slate-500">%</span>
-                        </div>
-                        <div class="mt-2 h-1.5 rounded-full bg-white/5">
-                          <div
-                            class="h-full w-[82%] rounded-full bg-gradient-to-r from-emerald-400 to-cyan-400"
-                          ></div>
-                        </div>
-                      </div>
-                      <div
-                        class="rounded-2xl border border-white/5 bg-gradient-to-br from-blue-600/20 to-indigo-600/10 p-4"
-                      >
-                        <div
-                          class="flex items-center gap-2 text-[9px] font-bold uppercase tracking-[.15em] text-blue-200"
-                        >
-                          <span class="material-symbols-outlined text-[16px]"
-                            >auto_awesome</span
-                          >
-                          AI operations
-                        </div>
-                        <div class="mt-3 text-sm font-bold text-white">
-                          4 workflows optimized this week
-                        </div>
-                        <div class="mt-2 font-mono text-[8px] text-slate-400">
-                          agent.status = "healthy"
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                          <i
+                            class="flex-1 rounded-b-[2px] rounded-t-[4px] bg-gradient-to-t from-indigo-600 to-cyan-400"
+                            style="height: 18%"
+                          ></i>
 
-                <div
-                  class="absolute -left-4 bottom-8 hidden rounded-2xl border border-slate-200 bg-white p-4 shadow-panel sm:block dark:border-white/10 dark:bg-slate-900"
-                >
-                  <div class="flex items-center gap-3">
-                    <div
-                      class="flex h-10 w-10 items-center justify-center rounded-xl bg-blue-600 text-white"
-                    >
-                      <span class="material-symbols-outlined">speed</span>
-                    </div>
-                    <div>
-                      <div class="text-sm font-extrabold">42% faster</div>
-                      <div class="text-[10px] text-slate-400">
-                        engineering cycles
+                          <i
+                            class="flex-1 rounded-b-[2px] rounded-t-[4px] bg-gradient-to-t from-blue-700 to-cyan-500"
+                            style="height: 28%"
+                          ></i>
+
+                          <i
+                            class="flex-1 rounded-b-[2px] rounded-t-[4px] bg-gradient-to-t from-indigo-600 to-cyan-400"
+                            style="height: 24%"
+                          ></i>
+
+                          <i
+                            class="flex-1 rounded-b-[2px] rounded-t-[4px] bg-gradient-to-t from-blue-700 to-cyan-500"
+                            style="height: 40%"
+                          ></i>
+
+                          <i
+                            class="flex-1 rounded-b-[2px] rounded-t-[4px] bg-gradient-to-t from-indigo-600 to-cyan-400"
+                            style="height: 36%"
+                          ></i>
+
+                          <i
+                            class="flex-1 rounded-b-[2px] rounded-t-[4px] bg-gradient-to-t from-blue-700 to-cyan-500"
+                            style="height: 52%"
+                          ></i>
+
+                          <i
+                            class="flex-1 rounded-b-[2px] rounded-t-[4px] bg-gradient-to-t from-indigo-600 to-cyan-400"
+                            style="height: 46%"
+                          ></i>
+
+                          <i
+                            class="flex-1 rounded-b-[2px] rounded-t-[4px] bg-gradient-to-t from-blue-700 to-cyan-500"
+                            style="height: 64%"
+                          ></i>
+
+                          <i
+                            class="flex-1 rounded-b-[2px] rounded-t-[4px] bg-gradient-to-t from-indigo-600 to-cyan-400"
+                            style="height: 58%"
+                          ></i>
+
+                          <i
+                            class="flex-1 rounded-b-[2px] rounded-t-[4px] bg-gradient-to-t from-blue-700 to-cyan-500"
+                            style="height: 76%"
+                          ></i>
+
+                          <i
+                            class="flex-1 rounded-b-[2px] rounded-t-[4px] bg-gradient-to-t from-indigo-600 to-cyan-400"
+                            style="height: 88%"
+                          ></i>
+
+                          <i
+                            class="flex-1 rounded-b-[2px] rounded-t-[4px] bg-gradient-to-t from-blue-700 to-cyan-500"
+                            style="height: 96%"
+                          ></i>
+                        </div>
+
+                        <div
+                          class="mt-2.5 font-mono text-[9px] tracking-[0.02em] text-slate-600"
+                        >
+                          // Billing volume snapshot · illustrative data.
+                        </div>
+                      </div>
+
+                      <!-- =========================================
+                     SCREEN 1 — AI
+                ========================================== -->
+                      <div class="tw-screen hidden min-h-[260px]" data-k="1">
+                        <div class="mb-3 grid grid-cols-2 gap-2 sm:grid-cols-3">
+                          <div
+                            class="rounded-xl border border-white/5 bg-white/[0.03] p-3"
+                          >
+                            <small
+                              class="mb-1.5 block text-[9px] font-bold uppercase tracking-[0.1em] text-slate-500"
+                            >
+                              Invoices parsed
+                            </small>
+
+                            <b
+                              class="block text-base font-extrabold leading-none tracking-[-0.03em] text-white sm:text-xl"
+                            >
+                              14,820
+                            </b>
+
+                            <span class="mt-1 block text-[9px] text-slate-600">
+                              1.2s per document
+                            </span>
+                          </div>
+
+                          <div
+                            class="rounded-xl border border-white/5 bg-white/[0.03] p-3"
+                          >
+                            <small
+                              class="mb-1.5 block text-[9px] font-bold uppercase tracking-[0.1em] text-slate-500"
+                            >
+                              Agent accuracy
+                            </small>
+
+                            <b
+                              class="block text-base font-extrabold leading-none tracking-[-0.03em] text-white sm:text-xl"
+                            >
+                              99.7%
+                            </b>
+
+                            <span class="mt-1 block text-[9px] text-slate-600">
+                              Sample benchmark
+                            </span>
+                          </div>
+
+                          <div
+                            class="rounded-xl border border-white/5 bg-white/[0.03] p-3"
+                          >
+                            <small
+                              class="mb-1.5 block text-[9px] font-bold uppercase tracking-[0.1em] text-slate-500"
+                            >
+                              Hours saved
+                            </small>
+
+                            <b
+                              class="block text-base font-extrabold leading-none tracking-[-0.03em] text-white sm:text-xl"
+                            >
+                              340+
+                            </b>
+
+                            <span class="mt-1 block text-[9px] text-slate-600">
+                              per month
+                            </span>
+                          </div>
+                        </div>
+
+                        <!-- Chart -->
+                        <div
+                          class="flex h-[110px] items-end gap-1.5 rounded-xl border border-white/5 bg-white/[0.02] p-3 sm:h-[140px]"
+                        >
+                          <i
+                            class="flex-1 rounded-b-[2px] rounded-t-[4px] bg-gradient-to-t from-blue-600 to-cyan-400"
+                            style="height: 18%"
+                          ></i>
+
+                          <i
+                            class="flex-1 rounded-b-[2px] rounded-t-[4px] bg-gradient-to-t from-blue-800 to-cyan-600"
+                            style="height: 26%"
+                          ></i>
+
+                          <i
+                            class="flex-1 rounded-b-[2px] rounded-t-[4px] bg-gradient-to-t from-blue-600 to-cyan-400"
+                            style="height: 34%"
+                          ></i>
+
+                          <i
+                            class="flex-1 rounded-b-[2px] rounded-t-[4px] bg-gradient-to-t from-blue-800 to-cyan-600"
+                            style="height: 30%"
+                          ></i>
+
+                          <i
+                            class="flex-1 rounded-b-[2px] rounded-t-[4px] bg-gradient-to-t from-blue-600 to-cyan-400"
+                            style="height: 48%"
+                          ></i>
+
+                          <i
+                            class="flex-1 rounded-b-[2px] rounded-t-[4px] bg-gradient-to-t from-blue-800 to-cyan-600"
+                            style="height: 52%"
+                          ></i>
+
+                          <i
+                            class="flex-1 rounded-b-[2px] rounded-t-[4px] bg-gradient-to-t from-blue-600 to-cyan-400"
+                            style="height: 58%"
+                          ></i>
+
+                          <i
+                            class="flex-1 rounded-b-[2px] rounded-t-[4px] bg-gradient-to-t from-blue-800 to-cyan-600"
+                            style="height: 66%"
+                          ></i>
+
+                          <i
+                            class="flex-1 rounded-b-[2px] rounded-t-[4px] bg-gradient-to-t from-blue-600 to-cyan-400"
+                            style="height: 64%"
+                          ></i>
+
+                          <i
+                            class="flex-1 rounded-b-[2px] rounded-t-[4px] bg-gradient-to-t from-blue-800 to-cyan-600"
+                            style="height: 78%"
+                          ></i>
+
+                          <i
+                            class="flex-1 rounded-b-[2px] rounded-t-[4px] bg-gradient-to-t from-blue-600 to-cyan-400"
+                            style="height: 86%"
+                          ></i>
+
+                          <i
+                            class="flex-1 rounded-b-[2px] rounded-t-[4px] bg-gradient-to-t from-blue-800 to-cyan-600"
+                            style="height: 94%"
+                          ></i>
+                        </div>
+
+                        <div
+                          class="mt-2.5 font-mono text-[9px] tracking-[0.02em] text-slate-600"
+                        >
+                          // Sample dashboard with illustrative data. Tap the
+                          tabs.
+                        </div>
+                      </div>
+
+                      <!-- =========================================
+                     SCREEN 2 — TRAFFIC
+                ========================================== -->
+                      <div class="tw-screen hidden min-h-[260px]" data-k="2">
+                        <div class="mb-3 grid grid-cols-2 gap-2 sm:grid-cols-3">
+                          <div
+                            class="rounded-xl border border-white/5 bg-white/[0.03] p-3"
+                          >
+                            <small
+                              class="mb-1.5 block text-[9px] font-bold uppercase tracking-[0.1em] text-slate-500"
+                            >
+                              Monthly visits
+                            </small>
+
+                            <b
+                              class="block text-base font-extrabold leading-none tracking-[-0.03em] text-white sm:text-xl"
+                            >
+                              1.4M
+                            </b>
+
+                            <span
+                              class="mt-1 block text-[9px] text-emerald-400"
+                            >
+                              +62% YoY
+                            </span>
+                          </div>
+
+                          <div
+                            class="rounded-xl border border-white/5 bg-white/[0.03] p-3"
+                          >
+                            <small
+                              class="mb-1.5 block text-[9px] font-bold uppercase tracking-[0.1em] text-slate-500"
+                            >
+                              Avg. session
+                            </small>
+
+                            <b
+                              class="block text-base font-extrabold leading-none tracking-[-0.03em] text-white sm:text-xl"
+                            >
+                              3m 42s
+                            </b>
+
+                            <span class="mt-1 block text-[9px] text-slate-600">
+                              engaged time
+                            </span>
+                          </div>
+
+                          <div
+                            class="rounded-xl border border-white/5 bg-white/[0.03] p-3"
+                          >
+                            <small
+                              class="mb-1.5 block text-[9px] font-bold uppercase tracking-[0.1em] text-slate-500"
+                            >
+                              Conversion
+                            </small>
+
+                            <b
+                              class="block text-base font-extrabold leading-none tracking-[-0.03em] text-white sm:text-xl"
+                            >
+                              8.9%
+                            </b>
+
+                            <span class="mt-1 block text-[9px] text-slate-600">
+                              checkout funnel
+                            </span>
+                          </div>
+                        </div>
+
+                        <!-- Traffic Chart -->
+                        <div
+                          class="flex h-[110px] items-end gap-1.5 rounded-xl border border-white/5 bg-white/[0.02] p-3 sm:h-[140px]"
+                        >
+                          <i
+                            class="flex-1 rounded-b-[2px] rounded-t-[4px] bg-gradient-to-t from-cyan-600 to-emerald-400"
+                            style="height: 40%"
+                          ></i>
+
+                          <i
+                            class="flex-1 rounded-b-[2px] rounded-t-[4px] bg-gradient-to-t from-teal-700 to-cyan-500"
+                            style="height: 36%"
+                          ></i>
+
+                          <i
+                            class="flex-1 rounded-b-[2px] rounded-t-[4px] bg-gradient-to-t from-cyan-600 to-emerald-400"
+                            style="height: 52%"
+                          ></i>
+
+                          <i
+                            class="flex-1 rounded-b-[2px] rounded-t-[4px] bg-gradient-to-t from-teal-700 to-cyan-500"
+                            style="height: 48%"
+                          ></i>
+
+                          <i
+                            class="flex-1 rounded-b-[2px] rounded-t-[4px] bg-gradient-to-t from-cyan-600 to-emerald-400"
+                            style="height: 60%"
+                          ></i>
+
+                          <i
+                            class="flex-1 rounded-b-[2px] rounded-t-[4px] bg-gradient-to-t from-teal-700 to-cyan-500"
+                            style="height: 55%"
+                          ></i>
+
+                          <i
+                            class="flex-1 rounded-b-[2px] rounded-t-[4px] bg-gradient-to-t from-cyan-600 to-emerald-400"
+                            style="height: 70%"
+                          ></i>
+
+                          <i
+                            class="flex-1 rounded-b-[2px] rounded-t-[4px] bg-gradient-to-t from-teal-700 to-cyan-500"
+                            style="height: 74%"
+                          ></i>
+
+                          <i
+                            class="flex-1 rounded-b-[2px] rounded-t-[4px] bg-gradient-to-t from-cyan-600 to-emerald-400"
+                            style="height: 68%"
+                          ></i>
+
+                          <i
+                            class="flex-1 rounded-b-[2px] rounded-t-[4px] bg-gradient-to-t from-teal-700 to-cyan-500"
+                            style="height: 82%"
+                          ></i>
+
+                          <i
+                            class="flex-1 rounded-b-[2px] rounded-t-[4px] bg-gradient-to-t from-cyan-600 to-emerald-400"
+                            style="height: 90%"
+                          ></i>
+
+                          <i
+                            class="flex-1 rounded-b-[2px] rounded-t-[4px] bg-gradient-to-t from-teal-700 to-cyan-500"
+                            style="height: 96%"
+                          ></i>
+                        </div>
+
+                        <div
+                          class="mt-2.5 font-mono text-[9px] tracking-[0.02em] text-slate-600"
+                        >
+                          // Live traffic snapshot · illustrative data.
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </div>
-                <div
-                  class="absolute -right-3 -top-4 hidden rounded-2xl border border-blue-200 bg-white p-3 shadow-panel sm:block dark:border-blue-500/20 dark:bg-slate-900"
-                >
-                  <div class="flex items-center gap-2">
-                    <span class="material-symbols-outlined text-blue-600"
-                      >verified</span
-                    ><span
-                      class="text-[10px] font-extrabold uppercase tracking-[.13em]"
-                      >Production ready</span
-                    >
                   </div>
                 </div>
               </div>
@@ -2157,295 +2506,573 @@
         </div>
       </section>
 
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          const tabs = document.querySelectorAll("#tw-tabs .tw-tab");
+          const screens = document.querySelectorAll("#tw-stage .tw-screen");
+          const live = document.getElementById("tw-live");
+          const dev = document.getElementById("tw-dev");
+
+          const activeBackgrounds = [
+            "#4f46e5", // ERP - indigo
+            "#2563eb", // AI - blue
+            "#059669", // Traffic - emerald
+          ];
+
+          const liveData = [
+            {
+              text: "● ERP SYNC",
+              bg: "rgba(129, 140, 248, 0.10)",
+              color: "#a5b4fc",
+            },
+            {
+              text: "● DEMO",
+              bg: "rgba(96, 165, 250, 0.10)",
+              color: "#93c5fd",
+            },
+            {
+              text: "● LIVE",
+              bg: "rgba(52, 211, 153, 0.10)",
+              color: "#6ee7b7",
+            },
+          ];
+
+          function setTab(index) {
+            /* ============================
+       SCREEN SWITCH
+    ============================ */
+            screens.forEach(function (screen) {
+              const screenIndex = Number(screen.getAttribute("data-k"));
+
+              if (screenIndex === index) {
+                screen.classList.remove("hidden");
+              } else {
+                screen.classList.add("hidden");
+              }
+            });
+
+            /* ============================
+       BUTTON BACKGROUND
+       INLINE = INSTANT
+    ============================ */
+            tabs.forEach(function (tab) {
+              const tabIndex = Number(tab.getAttribute("data-k"));
+
+              /* Reset */
+              tab.style.setProperty(
+                "background-color",
+                "transparent",
+                "important",
+              );
+
+              tab.classList.remove("text-white");
+              tab.classList.add("text-slate-400");
+
+              /* Active */
+              if (tabIndex === index) {
+                tab.style.setProperty(
+                  "background-color",
+                  activeBackgrounds[index],
+                  "important",
+                );
+
+                tab.classList.remove("text-slate-400");
+                tab.classList.add("text-white");
+              }
+            });
+
+            /* ============================
+       LIVE PILL
+    ============================ */
+            if (live && liveData[index]) {
+              live.textContent = liveData[index].text;
+
+              live.style.backgroundColor = liveData[index].bg;
+
+              live.style.color = liveData[index].color;
+            }
+
+            /* ============================
+       DEVICE SMALL SCALE
+    ============================ */
+            if (dev) {
+              dev.style.transition = "transform 180ms ease";
+
+              dev.style.transform = "scale(0.985)";
+
+              clearTimeout(window.twDevTimer);
+
+              window.twDevTimer = setTimeout(function () {
+                dev.style.transform = "scale(1)";
+              }, 180);
+            }
+          }
+
+          /* ============================
+     BUTTON CLICK
+  ============================ */
+          tabs.forEach(function (tab) {
+            tab.addEventListener(
+              "click",
+              function (event) {
+                event.preventDefault();
+                event.stopPropagation();
+
+                const index = Number(this.getAttribute("data-k"));
+
+                setTab(index);
+              },
+              false,
+            );
+          });
+
+          /* ============================
+     DEFAULT
+     AI AUTOMATION
+  ============================ */
+          setTab(1);
+        });
+      </script>
       <!-- SYSTEM PULSE / TRUST NETWORK -->
       <section
         id="system-pulse"
-        class="relative overflow-hidden border-b border-slate-800 bg-[#060b14] py-14 text-white sm:py-18 lg:py-20"
+        class="relative overflow-hidden border-b border-slate-800 bg-[#060b14] py-12 text-white sm:py-14 lg:py-20"
       >
-        <div class="absolute inset-0 system-pulse-grid opacity-70"></div>
+        <!-- =====================================================
+       BACKGROUND GRID
+  ====================================================== -->
         <div
-          class="absolute -left-24 top-1/2 h-72 w-72 -translate-y-1/2 rounded-full bg-blue-600/12 blur-[100px]"
+          class="pointer-events-none absolute inset-0 opacity-70 bg-[linear-gradient(rgba(255,255,255,0.025)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.025)_1px,transparent_1px)] bg-[size:32px_32px]"
         ></div>
+
+        <!-- =====================================================
+       BACKGROUND GLOW
+  ====================================================== -->
         <div
-          class="absolute -right-20 top-16 h-64 w-64 rounded-full bg-cyan-400/10 blur-[100px]"
+          class="pointer-events-none absolute -left-24 top-1/2 h-72 w-72 -translate-y-1/2 rounded-full bg-blue-600/12 blur-[100px]"
         ></div>
+
+        <div
+          class="pointer-events-none absolute -right-20 top-16 h-64 w-64 rounded-full bg-cyan-400/10 blur-[100px]"
+        ></div>
+
+        <!-- =====================================================
+       MAIN CONTAINER
+  ====================================================== -->
         <div class="relative mx-auto max-w-[1420px] px-4 sm:px-6 lg:px-8">
           <div
-            class="grid items-center gap-10 xl:grid-cols-[.82fr_1.18fr] xl:gap-14"
+            class="grid items-center gap-12 sm:gap-14 xl:grid-cols-[.82fr_1.18fr] xl:gap-14"
           >
-            <div class="reveal max-w-xl">
+            <!-- =================================================
+           LEFT CONTENT
+      ================================================== -->
+            <div class="mx-auto w-full max-w-xl xl:mx-0">
+              <!-- BADGE -->
               <div
-                class="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[.04] px-3.5 py-2 font-mono text-[8px] font-bold uppercase tracking-[.19em] text-cyan-300"
+                class="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[.04] px-3.5 py-2 font-mono text-[8px] font-bold uppercase tracking-[.16em] text-cyan-300 sm:px-4 sm:py-2.5 sm:text-[9px] sm:tracking-[.19em]"
               >
                 <span
-                  class="pulse-dot h-1.5 w-1.5 rounded-full bg-emerald-400"
+                  class="h-1.5 w-1.5 shrink-0 animate-pulse rounded-full bg-emerald-400 shadow-[0_0_10px_rgba(52,211,153,.8)]"
                 ></span>
+
                 Live engineering network
               </div>
+
+              <!-- HEADING -->
               <h2
-                class="font-display mt-5 text-3xl font-extrabold leading-[1.05] tracking-[-.045em] sm:text-4xl lg:text-5xl"
+                class="mt-5 font-display text-[2rem] font-extrabold leading-[1.08] tracking-[-.04em] sm:text-4xl sm:leading-[1.05] sm:tracking-[-.045em] lg:text-5xl xl:text-[3.4rem]"
               >
                 Your product should behave like a
                 <span
                   class="bg-gradient-to-r from-cyan-300 via-blue-400 to-indigo-400 bg-clip-text text-transparent"
-                  >connected advantage.</span
                 >
+                  connected advantage.
+                </span>
               </h2>
-              <p class="mt-5 text-[15px] leading-7 text-slate-400 sm:text-base">
+
+              <!-- DESCRIPTION -->
+              <p
+                class="mt-5 max-w-lg text-[14px] leading-6 text-slate-400 sm:text-base sm:leading-7 lg:text-[17px]"
+              >
                 Instead of a scrolling logo strip, this is the operating model
                 behind the work: strategy, experience, software, data, AI and
                 cloud connected through one engineering system.
               </p>
-              <div class="mt-7 grid grid-cols-2 gap-3 sm:grid-cols-3">
-                <div class="system-status-card rounded-2xl p-4">
+
+              <!-- =================================================
+             STATS
+        ================================================== -->
+              <div class="mt-7 grid grid-cols-2 gap-3 sm:mt-8 sm:grid-cols-3">
+                <!-- UPTIME -->
+                <div
+                  class="group rounded-2xl border border-white/10 bg-white/[.03] p-3.5 backdrop-blur-md transition-all duration-500 hover:-translate-y-1 hover:border-cyan-400/30 hover:bg-white/[.05] sm:p-4"
+                >
                   <div
-                    class="font-mono text-[8px] uppercase tracking-[.16em] text-slate-500"
+                    class="font-mono text-[8px] uppercase tracking-[.14em] text-slate-500 sm:text-[9px] sm:tracking-[.16em]"
                   >
                     Uptime
                   </div>
-                  <div class="mt-2 font-display text-xl font-extrabold">
+
+                  <div
+                    class="mt-2 font-display text-xl font-extrabold sm:text-2xl"
+                  >
                     99.99%
                   </div>
                 </div>
-                <div class="system-status-card rounded-2xl p-4">
+
+                <!-- DEPLOYS -->
+                <div
+                  class="group rounded-2xl border border-white/10 bg-white/[.03] p-3.5 backdrop-blur-md transition-all duration-500 hover:-translate-y-1 hover:border-blue-400/30 hover:bg-white/[.05] sm:p-4"
+                >
                   <div
-                    class="font-mono text-[8px] uppercase tracking-[.16em] text-slate-500"
+                    class="font-mono text-[8px] uppercase tracking-[.14em] text-slate-500 sm:text-[9px] sm:tracking-[.16em]"
                   >
                     Deploys
                   </div>
-                  <div class="mt-2 font-display text-xl font-extrabold">
+
+                  <div
+                    class="mt-2 font-display text-xl font-extrabold sm:text-2xl"
+                  >
                     2.4k+
                   </div>
                 </div>
+
+                <!-- RESPONSE -->
                 <div
-                  class="system-status-card col-span-2 rounded-2xl p-4 sm:col-span-1"
+                  class="group col-span-2 rounded-2xl border border-white/10 bg-white/[.03] p-3.5 backdrop-blur-md transition-all duration-500 hover:-translate-y-1 hover:border-emerald-400/30 hover:bg-white/[.05] sm:col-span-1 sm:p-4"
                 >
                   <div
-                    class="font-mono text-[8px] uppercase tracking-[.16em] text-slate-500"
+                    class="font-mono text-[8px] uppercase tracking-[.14em] text-slate-500 sm:text-[9px] sm:tracking-[.16em]"
                   >
                     Response
                   </div>
+
                   <div
-                    class="mt-2 flex items-center gap-2 font-display text-xl font-extrabold"
+                    class="mt-2 flex items-center gap-2 font-display text-xl font-extrabold sm:text-2xl"
                   >
-                    <span class="h-2 w-2 rounded-full bg-emerald-400"></span
-                    >42ms
+                    <span
+                      class="h-2 w-2 animate-pulse rounded-full bg-emerald-400 shadow-[0_0_10px_rgba(52,211,153,.8)]"
+                    ></span>
+
+                    42ms
                   </div>
                 </div>
               </div>
             </div>
 
-            <div class="reveal delay-2">
+            <!-- =================================================
+           RIGHT SYSTEM MAP
+      ================================================== -->
+            <div class="w-full min-w-0">
               <div
                 id="system-map"
-                class="system-pulse-shell relative mx-auto h-[390px] max-w-[820px] sm:h-[450px]"
+                class="relative mx-auto h-[455px] w-full max-w-[820px] overflow-visible sm:h-[450px]"
               >
+                <!-- =================================================
+               OUTER RING 1
+          ================================================== -->
                 <div
-                  class="absolute inset-[12%] rounded-full system-ring ring-1"
-                ></div>
-                <div
-                  class="absolute inset-[23%] rounded-full system-ring ring-2"
-                ></div>
-                <div
-                  class="absolute inset-[35%] rounded-full system-ring ring-3"
+                  class="absolute inset-[10%] rounded-full border border-cyan-400/10 motion-safe:animate-[spin_28s_linear_infinite] sm:inset-[12%]"
                 ></div>
 
                 <div
-                  class="signal-line hidden sm:block"
-                  style="
-                    width: 32%;
-                    left: 25%;
-                    top: 31%;
-                    transform: rotate(19deg);
-                  "
-                ></div>
-                <div
-                  class="signal-line hidden sm:block"
-                  style="
-                    width: 30%;
-                    right: 15%;
-                    top: 34%;
-                    transform: rotate(158deg);
-                  "
-                ></div>
-                <div
-                  class="signal-line hidden sm:block"
-                  style="
-                    width: 31%;
-                    left: 20%;
-                    top: 55%;
-                    transform: rotate(-8deg);
-                  "
-                ></div>
-                <div
-                  class="signal-line hidden sm:block"
-                  style="
-                    width: 32%;
-                    right: 17%;
-                    top: 59%;
-                    transform: rotate(188deg);
-                  "
-                ></div>
-                <div
-                  class="signal-line hidden md:block"
-                  style="
-                    width: 28%;
-                    left: 30%;
-                    bottom: 23%;
-                    transform: rotate(150deg);
-                  "
-                ></div>
-                <div
-                  class="signal-line hidden md:block"
-                  style="
-                    width: 27%;
-                    right: 27%;
-                    bottom: 25%;
-                    transform: rotate(208deg);
-                  "
+                  class="absolute inset-[10%] rounded-full border border-dashed border-cyan-300/10 sm:inset-[12%]"
                 ></div>
 
+                <!-- =================================================
+               OUTER RING 2
+          ================================================== -->
+                <div
+                  class="absolute inset-[21%] rounded-full border border-blue-400/15 motion-safe:animate-[spin_20s_linear_infinite_reverse] sm:inset-[23%]"
+                ></div>
+
+                <div
+                  class="absolute inset-[21%] rounded-full border border-dashed border-blue-300/10 sm:inset-[23%]"
+                ></div>
+
+                <!-- =================================================
+               OUTER RING 3
+          ================================================== -->
+                <div
+                  class="absolute inset-[32%] rounded-full border border-indigo-400/20 motion-safe:animate-[spin_14s_linear_infinite] sm:inset-[35%]"
+                ></div>
+
+                <!-- CORE GLOW -->
+                <div
+                  class="absolute left-1/2 top-1/2 h-[40%] w-[40%] -translate-x-1/2 -translate-y-1/2 rounded-full bg-blue-500/5 blur-3xl motion-safe:animate-pulse sm:h-[42%] sm:w-[42%]"
+                ></div>
+
+                <!-- =================================================
+               SIGNAL LINE 1
+          ================================================== -->
+                <div
+                  class="pointer-events-none absolute left-[20%] top-[31%] hidden h-px w-[28%] origin-left -rotate-[19deg] bg-gradient-to-r from-transparent via-cyan-400/60 to-transparent motion-safe:animate-pulse sm:left-[24%] sm:top-[32%] sm:w-[30%] sm:block"
+                ></div>
+
+                <!-- =================================================
+               SIGNAL LINE 2
+          ================================================== -->
+                <div
+                  class="pointer-events-none absolute right-[12%] top-[32%] hidden h-px w-[26%] origin-right rotate-[158deg] bg-gradient-to-r from-transparent via-cyan-400/60 to-transparent motion-safe:animate-pulse sm:right-[15%] sm:top-[34%] sm:w-[28%] sm:block"
+                ></div>
+
+                <!-- =================================================
+               SIGNAL LINE 3
+          ================================================== -->
+                <div
+                  class="pointer-events-none absolute left-[17%] top-[53%] hidden h-px w-[27%] origin-left -rotate-[8deg] bg-gradient-to-r from-transparent via-blue-400/60 to-transparent motion-safe:animate-pulse sm:left-[20%] sm:top-[55%] sm:w-[30%] sm:block"
+                ></div>
+
+                <!-- =================================================
+               SIGNAL LINE 4
+          ================================================== -->
+                <div
+                  class="pointer-events-none absolute right-[14%] top-[56%] hidden h-px w-[27%] origin-right rotate-[188deg] bg-gradient-to-r from-transparent via-blue-400/60 to-transparent motion-safe:animate-pulse sm:right-[17%] sm:top-[59%] sm:w-[30%] sm:block"
+                ></div>
+
+                <!-- =================================================
+               SIGNAL LINE 5
+          ================================================== -->
+                <div
+                  class="pointer-events-none absolute bottom-[27%] left-[28%] hidden h-px w-[24%] origin-left rotate-[150deg] bg-gradient-to-r from-transparent via-indigo-400/60 to-transparent motion-safe:animate-pulse sm:bottom-[24%] sm:left-[30%] sm:w-[27%] md:block"
+                ></div>
+
+                <!-- =================================================
+               SIGNAL LINE 6
+          ================================================== -->
+                <div
+                  class="pointer-events-none absolute bottom-[27%] right-[24%] hidden h-px w-[24%] origin-right rotate-[208deg] bg-gradient-to-r from-transparent via-indigo-400/60 to-transparent motion-safe:animate-pulse sm:bottom-[25%] sm:right-[27%] sm:w-[27%] md:block"
+                ></div>
+
+                <!-- =================================================
+               PRODUCT NODE
+          ================================================== -->
                 <button
                   type="button"
-                  class="system-node n1 rounded-2xl px-3.5 py-2.5 text-left"
+                  class="system-node absolute left-0 top-[14%] z-20 inline-flex max-w-[145px] items-center gap-1.5 rounded-2xl border border-white/10 bg-[#0b1220]/95 px-3 py-2.5 text-left shadow-lg backdrop-blur-xl transition-all duration-500 hover:-translate-y-1 hover:scale-[1.03] hover:border-cyan-400/40 hover:bg-[#101a2c] sm:left-[7%] sm:top-[20%] sm:max-w-none sm:gap-2 sm:px-4 sm:py-3"
                   data-system-node="Product Strategy"
                   data-system-copy="Roadmaps are tied to revenue, operations and customer outcomes."
                 >
-                  <span class="node-dot"></span
-                  ><span
-                    ><span class="block font-display text-[11px] font-extrabold"
-                      >Product</span
-                    ><span
-                      class="block font-mono text-[7px] uppercase tracking-[.14em] text-slate-500"
-                      >01 / Strategy</span
-                    ></span
-                  >
+                  <span
+                    class="relative h-2 w-2 shrink-0 rounded-full bg-cyan-300 shadow-[0_0_12px_rgba(103,232,249,.8)] before:absolute before:-inset-1 before:rounded-full before:border before:border-cyan-300/30 motion-safe:before:animate-ping sm:h-2.5 sm:w-2.5"
+                  ></span>
+
+                  <span class="min-w-0">
+                    <span
+                      class="block font-display text-[11px] font-extrabold sm:text-[13px]"
+                    >
+                      Product
+                    </span>
+
+                    <span
+                      class="mt-0.5 block font-mono text-[7px] uppercase tracking-[.11em] text-slate-500 sm:text-[8px] sm:tracking-[.14em]"
+                    >
+                      01 / Strategy
+                    </span>
+                  </span>
                 </button>
+
+                <!-- =================================================
+               EXPERIENCE NODE
+          ================================================== -->
                 <button
                   type="button"
-                  class="system-node n2 rounded-2xl px-3.5 py-2.5 text-left"
+                  class="system-node absolute right-0 top-[14%] z-20 inline-flex max-w-[155px] items-center gap-1.5 rounded-2xl border border-white/10 bg-[#0b1220]/95 px-3 py-2.5 text-left shadow-lg backdrop-blur-xl transition-all duration-500 hover:-translate-y-1 hover:scale-[1.03] hover:border-cyan-400/40 hover:bg-[#101a2c] sm:right-[7%] sm:top-[20%] sm:max-w-none sm:gap-2 sm:px-4 sm:py-3"
                   data-system-node="Experience Design"
                   data-system-copy="Interfaces turn complex workflows into fast, confident decisions."
                 >
-                  <span class="node-dot"></span
-                  ><span
-                    ><span class="block font-display text-[11px] font-extrabold"
-                      >Experience</span
-                    ><span
-                      class="block font-mono text-[7px] uppercase tracking-[.14em] text-slate-500"
-                      >02 / Design</span
-                    ></span
-                  >
+                  <span
+                    class="relative h-2 w-2 shrink-0 rounded-full bg-cyan-300 shadow-[0_0_12px_rgba(103,232,249,.8)] before:absolute before:-inset-1 before:rounded-full before:border before:border-cyan-300/30 motion-safe:before:animate-ping sm:h-2.5 sm:w-2.5"
+                  ></span>
+
+                  <span class="min-w-0">
+                    <span
+                      class="block font-display text-[11px] font-extrabold sm:text-[13px]"
+                    >
+                      Experience
+                    </span>
+
+                    <span
+                      class="mt-0.5 block font-mono text-[7px] uppercase tracking-[.11em] text-slate-500 sm:text-[8px] sm:tracking-[.14em]"
+                    >
+                      02 / Design
+                    </span>
+                  </span>
                 </button>
+
+                <!-- =================================================
+               SOFTWARE NODE
+          ================================================== -->
                 <button
                   type="button"
-                  class="system-node n3 rounded-2xl px-3.5 py-2.5 text-left"
+                  class="system-node absolute -left-1 top-[42%] z-20 inline-flex max-w-[145px] items-center gap-1.5 rounded-2xl border border-white/10 bg-[#0b1220]/95 px-3 py-2.5 text-left shadow-lg backdrop-blur-xl transition-all duration-500 hover:-translate-y-1 hover:scale-[1.03] hover:border-blue-400/40 hover:bg-[#101a2c] sm:left-[5%] sm:top-[48%] sm:max-w-none sm:gap-2 sm:px-4 sm:py-3"
                   data-system-node="Core Software"
                   data-system-copy="APIs, platforms and business logic are engineered as one system."
                 >
-                  <span class="node-dot"></span
-                  ><span
-                    ><span class="block font-display text-[11px] font-extrabold"
-                      >Software</span
-                    ><span
-                      class="block font-mono text-[7px] uppercase tracking-[.14em] text-slate-500"
-                      >03 / Build</span
-                    ></span
-                  >
+                  <span
+                    class="relative h-2 w-2 shrink-0 rounded-full bg-blue-300 shadow-[0_0_12px_rgba(147,197,253,.8)] before:absolute before:-inset-1 before:rounded-full before:border before:border-blue-300/30 motion-safe:before:animate-ping sm:h-2.5 sm:w-2.5"
+                  ></span>
+
+                  <span class="min-w-0">
+                    <span
+                      class="block font-display text-[11px] font-extrabold sm:text-[13px]"
+                    >
+                      Software
+                    </span>
+
+                    <span
+                      class="mt-0.5 block font-mono text-[7px] uppercase tracking-[.11em] text-slate-500 sm:text-[8px] sm:tracking-[.14em]"
+                    >
+                      03 / Build
+                    </span>
+                  </span>
                 </button>
+
+                <!-- =================================================
+               DATA NODE
+          ================================================== -->
                 <button
                   type="button"
-                  class="system-node n4 rounded-2xl px-3.5 py-2.5 text-left"
+                  class="system-node absolute -right-1 top-[42%] z-20 inline-flex max-w-[145px] items-center gap-1.5 rounded-2xl border border-white/10 bg-[#0b1220]/95 px-3 py-2.5 text-left shadow-lg backdrop-blur-xl transition-all duration-500 hover:-translate-y-1 hover:scale-[1.03] hover:border-blue-400/40 hover:bg-[#101a2c] sm:right-[5%] sm:top-[48%] sm:max-w-none sm:gap-2 sm:px-4 sm:py-3"
                   data-system-node="Data Intelligence"
                   data-system-copy="Your most important signals become measurable, queryable and actionable."
                 >
-                  <span class="node-dot"></span
-                  ><span
-                    ><span class="block font-display text-[11px] font-extrabold"
-                      >Data</span
-                    ><span
-                      class="block font-mono text-[7px] uppercase tracking-[.14em] text-slate-500"
-                      >04 / Intelligence</span
-                    ></span
-                  >
+                  <span
+                    class="relative h-2 w-2 shrink-0 rounded-full bg-blue-300 shadow-[0_0_12px_rgba(147,197,253,.8)] before:absolute before:-inset-1 before:rounded-full before:border before:border-blue-300/30 motion-safe:before:animate-ping sm:h-2.5 sm:w-2.5"
+                  ></span>
+
+                  <span class="min-w-0">
+                    <span
+                      class="block font-display text-[11px] font-extrabold sm:text-[13px]"
+                    >
+                      Data
+                    </span>
+
+                    <span
+                      class="mt-0.5 block font-mono text-[7px] uppercase tracking-[.11em] text-slate-500 sm:text-[8px] sm:tracking-[.14em]"
+                    >
+                      04 / Intelligence
+                    </span>
+                  </span>
                 </button>
+
+                <!-- =================================================
+               AI NODE
+          ================================================== -->
                 <button
                   type="button"
-                  class="system-node n5 rounded-2xl px-3.5 py-2.5 text-left"
+                  class="system-node absolute bottom-[22%] left-[5%] z-20 inline-flex max-w-[140px] items-center gap-1.5 rounded-2xl border border-white/10 bg-[#0b1220]/95 px-3 py-2.5 text-left shadow-lg backdrop-blur-xl transition-all duration-500 hover:-translate-y-1 hover:scale-[1.03] hover:border-indigo-400/40 hover:bg-[#101a2c] sm:bottom-[22%] sm:left-[16%] sm:max-w-none sm:gap-2 sm:px-4 sm:py-3"
                   data-system-node="AI Automation"
                   data-system-copy="Repetitive decisions and operations become intelligent workflows."
                 >
-                  <span class="node-dot"></span
-                  ><span
-                    ><span class="block font-display text-[11px] font-extrabold"
-                      >AI</span
-                    ><span
-                      class="block font-mono text-[7px] uppercase tracking-[.14em] text-slate-500"
-                      >05 / Automation</span
-                    ></span
-                  >
+                  <span
+                    class="relative h-2 w-2 shrink-0 rounded-full bg-indigo-300 shadow-[0_0_12px_rgba(165,180,252,.8)] before:absolute before:-inset-1 before:rounded-full before:border before:border-indigo-300/30 motion-safe:before:animate-ping sm:h-2.5 sm:w-2.5"
+                  ></span>
+
+                  <span class="min-w-0">
+                    <span
+                      class="block font-display text-[11px] font-extrabold sm:text-[13px]"
+                    >
+                      AI
+                    </span>
+
+                    <span
+                      class="mt-0.5 block font-mono text-[7px] uppercase tracking-[.11em] text-slate-500 sm:text-[8px] sm:tracking-[.14em]"
+                    >
+                      05 / Automation
+                    </span>
+                  </span>
                 </button>
+
+                <!-- =================================================
+               CLOUD NODE
+          ================================================== -->
                 <button
                   type="button"
-                  class="system-node n6 rounded-2xl px-3.5 py-2.5 text-left"
+                  class="system-node absolute bottom-[22%] right-[5%] z-20 inline-flex max-w-[145px] items-center gap-1.5 rounded-2xl border border-white/10 bg-[#0b1220]/95 px-3 py-2.5 text-left shadow-lg backdrop-blur-xl transition-all duration-500 hover:-translate-y-1 hover:scale-[1.03] hover:border-indigo-400/40 hover:bg-[#101a2c] sm:bottom-[22%] sm:right-[16%] sm:max-w-none sm:gap-2 sm:px-4 sm:py-3"
                   data-system-node="Cloud Reliability"
                   data-system-copy="Infrastructure, observability and security keep every critical layer resilient."
                 >
-                  <span class="node-dot"></span
-                  ><span
-                    ><span class="block font-display text-[11px] font-extrabold"
-                      >Cloud</span
-                    ><span
-                      class="block font-mono text-[7px] uppercase tracking-[.14em] text-slate-500"
-                      >06 / Scale</span
-                    ></span
-                  >
+                  <span
+                    class="relative h-2 w-2 shrink-0 rounded-full bg-indigo-300 shadow-[0_0_12px_rgba(165,180,252,.8)] before:absolute before:-inset-1 before:rounded-full before:border before:border-indigo-300/30 motion-safe:before:animate-ping sm:h-2.5 sm:w-2.5"
+                  ></span>
+
+                  <span class="min-w-0">
+                    <span
+                      class="block font-display text-[11px] font-extrabold sm:text-[13px]"
+                    >
+                      Cloud
+                    </span>
+
+                    <span
+                      class="mt-0.5 block font-mono text-[7px] uppercase tracking-[.11em] text-slate-500 sm:text-[8px] sm:tracking-[.14em]"
+                    >
+                      06 / Scale
+                    </span>
+                  </span>
                 </button>
 
+                <!-- =================================================
+               CENTER CORE
+          ================================================== -->
                 <div
-                  class="system-core absolute left-1/2 top-1/2 flex h-28 w-28 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-[2rem] border border-white/10 bg-gradient-to-br from-blue-600 via-blue-600 to-indigo-700"
+                  class="absolute left-1/2 top-1/2 z-10 flex h-24 w-24 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-[1.6rem] border border-white/10 bg-gradient-to-br from-blue-600 via-blue-600 to-indigo-700 shadow-[0_0_55px_rgba(37,99,235,.28)] transition-all duration-500 motion-safe:animate-pulse hover:scale-105 sm:h-28 sm:w-28 sm:rounded-[2rem] sm:shadow-[0_0_60px_rgba(37,99,235,.28)]"
                 >
-                  <div class="text-center">
+                  <div
+                    class="absolute inset-0 rounded-[1.6rem] bg-blue-400/10 blur-xl sm:rounded-[2rem]"
+                  ></div>
+
+                  <div class="relative text-center">
                     <div
-                      class="font-mono text-[7px] font-bold uppercase tracking-[.2em] text-blue-100"
+                      class="font-mono text-[7px] font-bold uppercase tracking-[.18em] text-blue-100 sm:text-[8px] sm:tracking-[.2em]"
                     >
                       Synapse
                     </div>
-                    <div class="mt-1 font-display text-lg font-extrabold">
+
+                    <div
+                      class="mt-1 font-display text-lg font-extrabold sm:text-xl"
+                    >
                       Core
                     </div>
+
                     <div
-                      class="mt-1 text-[7px] uppercase tracking-[.15em] text-blue-100/70"
+                      class="mt-1 px-1 text-[6px] uppercase tracking-[.12em] text-blue-100/70 sm:text-[8px] sm:tracking-[.15em]"
                     >
                       Connected system
                     </div>
                   </div>
                 </div>
 
+                <!-- =================================================
+               DETAIL PANEL
+          ================================================== -->
                 <div
                   id="system-detail"
-                  class="absolute bottom-1 left-1/2 w-[min(92%,520px)] -translate-x-1/2 rounded-2xl border border-white/10 bg-[#0b1220]/90 px-4 py-3 shadow-panel backdrop-blur-xl sm:px-5"
+                  class="absolute bottom-0 left-1/2 z-30 w-[calc(100%-1.5rem)] -translate-x-1/2 rounded-2xl border border-white/10 bg-[#0b1220]/95 px-3.5 py-3 shadow-2xl backdrop-blur-xl sm:w-[min(92%,520px)] sm:px-5 sm:py-3.5"
                 >
-                  <div class="flex items-center justify-between gap-4">
-                    <div class="min-w-0">
+                  <div class="flex items-center justify-between gap-3 sm:gap-4">
+                    <div class="min-w-0 flex-1">
                       <div
                         id="system-detail-title"
-                        class="font-display truncate text-xs font-extrabold text-white"
+                        class="truncate font-display text-xs font-extrabold text-white sm:text-sm"
                       >
                         Core Software
                       </div>
+
                       <div
                         id="system-detail-copy"
-                        class="mt-1 text-[10px] leading-5 text-slate-400"
+                        class="mt-1 line-clamp-2 text-[9px] leading-4 text-slate-400 sm:text-[11px] sm:leading-5"
                       >
                         APIs, platforms and business logic are engineered as one
                         system.
                       </div>
                     </div>
+
                     <span
-                      class="material-symbols-outlined shrink-0 text-cyan-300"
-                      >hub</span
+                      class="material-symbols-outlined shrink-0 text-[18px] text-cyan-300 sm:text-[20px]"
                     >
+                      hub
+                    </span>
                   </div>
                 </div>
               </div>
@@ -3223,6 +3850,9 @@
         class="scroll-mt-24 border-b border-slate-200 bg-white py-20 sm:py-24 lg:py-28 dark:border-white/10 dark:bg-[#050913]"
       >
         <div class="mx-auto max-w-[1420px] px-4 sm:px-6 lg:px-8">
+          <!-- ===================================================== 
+         HEADER 
+    ====================================================== -->
           <div
             class="reveal flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between"
           >
@@ -3232,11 +3862,13 @@
               >
                 Selected work
               </div>
+
               <h2
                 class="font-display mt-5 text-3xl font-extrabold tracking-[-.045em] sm:text-4xl lg:text-5xl"
               >
                 Projects we are proud to have shipped.
               </h2>
+
               <p
                 class="mt-4 max-w-2xl text-[15px] leading-7 text-slate-600 dark:text-slate-300"
               >
@@ -3244,233 +3876,1058 @@
                 combine into a premium business experience.
               </p>
             </div>
+
             <a
               href="#contact"
               class="inline-flex items-center gap-2 text-sm font-bold text-blue-600"
-              >Start your project
-              <span class="material-symbols-outlined text-[18px]"
-                >arrow_forward</span
-              ></a
             >
+              Start your project
+              <span class="material-symbols-outlined text-[18px]">
+                arrow_forward
+              </span>
+            </a>
           </div>
 
-          <div class="mt-12 grid gap-5 lg:grid-cols-12">
-            <article
-              class="reveal group lg:col-span-7 overflow-hidden rounded-[2rem] border border-slate-200 bg-[#f7f9fc] dark:border-white/10 dark:bg-slate-900"
-            >
+          <!-- ===================================================== 
+         AUTO SLIDER
+    ====================================================== -->
+          <div class="mt-12">
+            <!-- VIEWPORT -->
+            <div class="overflow-hidden rounded-[2rem]">
+              <!-- SLIDER -->
               <div
-                class="relative h-[330px] overflow-hidden bg-gradient-to-br from-[#0b1220] via-[#101d39] to-[#082032] p-6 sm:h-[390px]"
+                id="work-slider"
+                class="flex transition-transform duration-700 ease-out"
               >
-                <div
-                  class="absolute -right-20 -top-20 h-72 w-72 rounded-full bg-blue-500/20 blur-3xl"
-                ></div>
-                <div
-                  class="relative h-full rounded-[1.5rem] border border-white/10 bg-[#07111e]/80 p-4 shadow-panel backdrop-blur"
-                >
-                  <div
-                    class="flex items-center justify-between font-mono text-[8px] text-slate-500"
-                  >
-                    <span>FINPULSE / CONTROL CENTER</span
-                    ><span class="text-emerald-300">LIVE</span>
-                  </div>
-                  <div class="mt-5 grid grid-cols-3 gap-2">
-                    <div class="rounded-xl bg-white/5 p-3">
-                      <div class="text-[8px] text-slate-500">Revenue</div>
-                      <div
-                        class="mt-2 font-display text-2xl font-extrabold text-white"
-                      >
-                        ₹9.8Cr
-                      </div>
-                    </div>
-                    <div class="rounded-xl bg-white/5 p-3">
-                      <div class="text-[8px] text-slate-500">Margin</div>
-                      <div
-                        class="mt-2 font-display text-2xl font-extrabold text-emerald-300"
-                      >
-                        28.4%
-                      </div>
-                    </div>
-                    <div class="rounded-xl bg-white/5 p-3">
-                      <div class="text-[8px] text-slate-500">Risk</div>
-                      <div
-                        class="mt-2 font-display text-2xl font-extrabold text-cyan-300"
-                      >
-                        Low
-                      </div>
-                    </div>
-                  </div>
-                  <div class="mt-3 grid grid-cols-[1.5fr_1fr] gap-2">
-                    <div class="rounded-xl bg-white/5 p-4">
-                      <div class="text-[8px] text-slate-500">Growth curve</div>
-                      <div class="mt-4 h-24">
-                        <svg
-                          viewBox="0 0 280 100"
-                          class="h-full w-full"
-                          fill="none"
-                        >
-                          <path
-                            d="M4 86C28 82 32 70 54 72C78 74 82 52 107 57C132 62 135 45 160 48C187 52 190 25 214 31C235 36 246 17 276 9"
-                            stroke="#4f8cff"
-                            stroke-width="4"
-                            stroke-linecap="round"
-                          />
-                          <path
-                            d="M4 86C28 82 32 70 54 72C78 74 82 52 107 57C132 62 135 45 160 48C187 52 190 25 214 31C235 36 246 17 276 9V100H4Z"
-                            fill="url(#g)"
-                            opacity=".16"
-                          />
-                          <defs>
-                            <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
-                              <stop stop-color="#4f8cff" />
-                              <stop
-                                offset="1"
-                                stop-color="#4f8cff"
-                                stop-opacity="0"
-                              />
-                            </linearGradient>
-                          </defs>
-                        </svg>
-                      </div>
-                    </div>
-                    <div class="grid gap-2">
-                      <div class="rounded-xl bg-white/5 p-4">
-                        <div class="text-[8px] text-slate-500">Forecast</div>
-                        <div
-                          class="mt-2 font-display text-xl font-extrabold text-white"
-                        >
-                          +16.8%
-                        </div>
-                      </div>
-                      <div class="rounded-xl bg-white/5 p-4">
-                        <div class="text-[8px] text-slate-500">Automations</div>
-                        <div
-                          class="mt-2 font-display text-xl font-extrabold text-white"
-                        >
-                          42
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="p-6 sm:p-7">
-                <div
-                  class="text-[9px] font-bold uppercase tracking-[.18em] text-blue-600"
-                >
-                  Fintech · Analytics platform
-                </div>
-                <h3 class="mt-3 text-2xl font-extrabold">
-                  A command center that turned finance data into action.
-                </h3>
-                <p
-                  class="mt-3 max-w-2xl text-sm leading-6 text-slate-600 dark:text-slate-400"
-                >
-                  Unified reporting, forecasts and workflow automation across
-                  fragmented operational data.
-                </p>
-                <div class="mt-6 flex flex-wrap gap-2">
-                  <span
-                    class="rounded-full bg-slate-100 px-3 py-1.5 font-mono text-[9px] text-slate-500 dark:bg-white/5"
-                    >React</span
-                  ><span
-                    class="rounded-full bg-slate-100 px-3 py-1.5 font-mono text-[9px] text-slate-500 dark:bg-white/5"
-                    >Laravel</span
-                  ><span
-                    class="rounded-full bg-slate-100 px-3 py-1.5 font-mono text-[9px] text-slate-500 dark:bg-white/5"
-                    >AWS</span
-                  ><span
-                    class="rounded-full bg-slate-100 px-3 py-1.5 font-mono text-[9px] text-slate-500 dark:bg-white/5"
-                    >AI</span
-                  >
-                </div>
-              </div>
-            </article>
-
-            <div class="grid gap-5 lg:col-span-5">
-              <article
-                class="reveal delay-1 group rounded-[2rem] border border-slate-200 bg-[#f7f9fc] p-6 dark:border-white/10 dark:bg-slate-900"
-              >
-                <div class="flex items-start justify-between">
-                  <div
-                    class="text-[9px] font-bold uppercase tracking-[.18em] text-cyan-600"
-                  >
-                    Retail · Commerce
-                  </div>
-                  <span class="material-symbols-outlined text-cyan-600"
-                    >shopping_bag</span
-                  >
-                </div>
-                <h3 class="mt-8 text-2xl font-extrabold">
-                  A commerce engine built for campaigns and scale.
-                </h3>
-                <p
-                  class="mt-3 text-sm leading-6 text-slate-600 dark:text-slate-400"
-                >
-                  Composable storefront, real-time stock and custom checkout
-                  flows.
-                </p>
-                <div class="mt-7 grid grid-cols-3 gap-2">
-                  <div
-                    class="rounded-xl bg-white p-3 text-center shadow-sm dark:bg-white/5"
-                  >
-                    <div class="text-lg font-extrabold">2.8×</div>
-                    <div class="text-[8px] text-slate-400">faster</div>
-                  </div>
-                  <div
-                    class="rounded-xl bg-white p-3 text-center shadow-sm dark:bg-white/5"
-                  >
-                    <div class="text-lg font-extrabold">61%</div>
-                    <div class="text-[8px] text-slate-400">more CVR</div>
-                  </div>
-                  <div
-                    class="rounded-xl bg-white p-3 text-center shadow-sm dark:bg-white/5"
-                  >
-                    <div class="text-lg font-extrabold">24/7</div>
-                    <div class="text-[8px] text-slate-400">ops</div>
-                  </div>
-                </div>
-              </article>
-              <article
-                class="reveal delay-2 group rounded-[2rem] border border-slate-200 bg-slate-950 p-6 text-white dark:border-white/10"
-              >
-                <div class="flex items-start justify-between">
-                  <div
-                    class="text-[9px] font-bold uppercase tracking-[.18em] text-indigo-300"
-                  >
-                    HealthTech · AI
-                  </div>
-                  <span class="material-symbols-outlined text-indigo-300"
-                    >psychology</span
-                  >
-                </div>
-                <h3 class="mt-8 text-2xl font-extrabold">
-                  Intelligent triage that reduced response time.
-                </h3>
-                <p class="mt-3 text-sm leading-6 text-slate-400">
-                  Secure patient workflow, classification and escalation
-                  automation.
-                </p>
-                <div
-                  class="mt-7 flex items-center justify-between rounded-2xl border border-white/10 bg-white/5 p-4"
-                >
-                  <div>
-                    <div class="font-display text-3xl font-extrabold">-67%</div>
-                    <div
-                      class="text-[8px] uppercase tracking-[.15em] text-slate-500"
+                <!-- ================================================= 
+               SLIDE 1
+          ================================================== -->
+                <div class="w-full shrink-0">
+                  <div class="grid gap-5 lg:grid-cols-12">
+                    <!-- MAIN CARD -->
+                    <article
+                      class="reveal group lg:col-span-7 overflow-hidden rounded-[2rem] border border-slate-200 bg-[#f7f9fc] dark:border-white/10 dark:bg-slate-900"
                     >
-                      response time
+                      <div
+                        class="relative h-[330px] overflow-hidden bg-gradient-to-br from-[#0b1220] via-[#101d39] to-[#082032] p-6 sm:h-[390px]"
+                      >
+                        <div
+                          class="absolute -right-20 -top-20 h-72 w-72 rounded-full bg-blue-500/20 blur-3xl"
+                        ></div>
+
+                        <div
+                          class="relative h-full rounded-[1.5rem] border border-white/10 bg-[#07111e]/80 p-4 shadow-panel backdrop-blur"
+                        >
+                          <div
+                            class="flex items-center justify-between font-mono text-[8px] text-slate-500"
+                          >
+                            <span>FINPULSE / CONTROL CENTER</span>
+                            <span class="text-emerald-300">LIVE</span>
+                          </div>
+
+                          <div class="mt-5 grid grid-cols-3 gap-2">
+                            <div class="rounded-xl bg-white/5 p-3">
+                              <div class="text-[8px] text-slate-500">
+                                Revenue
+                              </div>
+
+                              <div
+                                class="mt-2 font-display text-2xl font-extrabold text-white"
+                              >
+                                ₹9.8Cr
+                              </div>
+                            </div>
+
+                            <div class="rounded-xl bg-white/5 p-3">
+                              <div class="text-[8px] text-slate-500">
+                                Margin
+                              </div>
+
+                              <div
+                                class="mt-2 font-display text-2xl font-extrabold text-emerald-300"
+                              >
+                                28.4%
+                              </div>
+                            </div>
+
+                            <div class="rounded-xl bg-white/5 p-3">
+                              <div class="text-[8px] text-slate-500">Risk</div>
+
+                              <div
+                                class="mt-2 font-display text-2xl font-extrabold text-cyan-300"
+                              >
+                                Low
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="mt-3 grid grid-cols-[1.5fr_1fr] gap-2">
+                            <div class="rounded-xl bg-white/5 p-4">
+                              <div class="text-[8px] text-slate-500">
+                                Growth curve
+                              </div>
+
+                              <div class="mt-4 h-24">
+                                <svg
+                                  viewBox="0 0 280 100"
+                                  class="h-full w-full"
+                                  fill="none"
+                                >
+                                  <path
+                                    d="M4 86C28 82 32 70 54 72C78 74 82 52 107 57C132 62 135 45 160 48C187 52 190 25 214 31C235 36 246 17 276 9"
+                                    stroke="#4f8cff"
+                                    stroke-width="4"
+                                    stroke-linecap="round"
+                                  />
+
+                                  <path
+                                    d="M4 86C28 82 32 70 54 72C78 74 82 52 107 57C132 62 135 45 160 48C187 52 190 25 214 31C235 36 246 17 276 9V100H4Z"
+                                    fill="url(#g1)"
+                                    opacity=".16"
+                                  />
+
+                                  <defs>
+                                    <linearGradient
+                                      id="g1"
+                                      x1="0"
+                                      y1="0"
+                                      x2="0"
+                                      y2="1"
+                                    >
+                                      <stop stop-color="#4f8cff" />
+                                      <stop
+                                        offset="1"
+                                        stop-color="#4f8cff"
+                                        stop-opacity="0"
+                                      />
+                                    </linearGradient>
+                                  </defs>
+                                </svg>
+                              </div>
+                            </div>
+
+                            <div class="grid gap-2">
+                              <div class="rounded-xl bg-white/5 p-4">
+                                <div class="text-[8px] text-slate-500">
+                                  Forecast
+                                </div>
+
+                                <div
+                                  class="mt-2 font-display text-xl font-extrabold text-white"
+                                >
+                                  +16.8%
+                                </div>
+                              </div>
+
+                              <div class="rounded-xl bg-white/5 p-4">
+                                <div class="text-[8px] text-slate-500">
+                                  Automations
+                                </div>
+
+                                <div
+                                  class="mt-2 font-display text-xl font-extrabold text-white"
+                                >
+                                  42
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="p-6 sm:p-7">
+                        <div
+                          class="text-[9px] font-bold uppercase tracking-[.18em] text-blue-600"
+                        >
+                          Fintech · Analytics platform
+                        </div>
+
+                        <h3 class="mt-3 text-2xl font-extrabold">
+                          A command center that turned finance data into action.
+                        </h3>
+
+                        <p
+                          class="mt-3 max-w-2xl text-sm leading-6 text-slate-600 dark:text-slate-400"
+                        >
+                          Unified reporting, forecasts and workflow automation
+                          across fragmented operational data.
+                        </p>
+
+                        <div class="mt-6 flex flex-wrap gap-2">
+                          <span
+                            class="rounded-full bg-slate-100 px-3 py-1.5 font-mono text-[9px] text-slate-500 dark:bg-white/5"
+                          >
+                            React
+                          </span>
+
+                          <span
+                            class="rounded-full bg-slate-100 px-3 py-1.5 font-mono text-[9px] text-slate-500 dark:bg-white/5"
+                          >
+                            Laravel
+                          </span>
+
+                          <span
+                            class="rounded-full bg-slate-100 px-3 py-1.5 font-mono text-[9px] text-slate-500 dark:bg-white/5"
+                          >
+                            AWS
+                          </span>
+
+                          <span
+                            class="rounded-full bg-slate-100 px-3 py-1.5 font-mono text-[9px] text-slate-500 dark:bg-white/5"
+                          >
+                            AI
+                          </span>
+                        </div>
+                      </div>
+                    </article>
+
+                    <!-- RIGHT CARDS -->
+                    <div class="grid gap-5 lg:col-span-5">
+                      <!-- RETAIL -->
+                      <article
+                        class="reveal delay-1 group rounded-[2rem] border border-slate-200 bg-[#f7f9fc] p-6 dark:border-white/10 dark:bg-slate-900"
+                      >
+                        <div class="flex items-start justify-between">
+                          <div
+                            class="text-[9px] font-bold uppercase tracking-[.18em] text-cyan-600"
+                          >
+                            Retail · Commerce
+                          </div>
+
+                          <span class="material-symbols-outlined text-cyan-600">
+                            shopping_bag
+                          </span>
+                        </div>
+
+                        <h3 class="mt-8 text-2xl font-extrabold">
+                          A commerce engine built for campaigns and scale.
+                        </h3>
+
+                        <p
+                          class="mt-3 text-sm leading-6 text-slate-600 dark:text-slate-400"
+                        >
+                          Composable storefront, real-time stock and custom
+                          checkout flows.
+                        </p>
+
+                        <div class="mt-7 grid grid-cols-3 gap-2">
+                          <div
+                            class="rounded-xl bg-white p-3 text-center shadow-sm dark:bg-white/5"
+                          >
+                            <div class="text-lg font-extrabold">2.8×</div>
+                            <div class="text-[8px] text-slate-400">faster</div>
+                          </div>
+
+                          <div
+                            class="rounded-xl bg-white p-3 text-center shadow-sm dark:bg-white/5"
+                          >
+                            <div class="text-lg font-extrabold">61%</div>
+                            <div class="text-[8px] text-slate-400">
+                              more CVR
+                            </div>
+                          </div>
+
+                          <div
+                            class="rounded-xl bg-white p-3 text-center shadow-sm dark:bg-white/5"
+                          >
+                            <div class="text-lg font-extrabold">24/7</div>
+                            <div class="text-[8px] text-slate-400">ops</div>
+                          </div>
+                        </div>
+                      </article>
+
+                      <!-- HEALTH TECH -->
+                      <article
+                        class="reveal delay-2 group rounded-[2rem] border border-slate-200 bg-slate-950 p-6 text-white dark:border-white/10"
+                      >
+                        <div
+                          class="flex min-w-0 items-start justify-between gap-4"
+                        >
+                          <div
+                            class="min-w-0 text-[9px] font-bold uppercase tracking-[.18em] text-indigo-300"
+                          >
+                            HealthTech · AI
+                          </div>
+
+                          <span
+                            class="material-symbols-outlined relative z-20 shrink-0 text-indigo-300"
+                          >
+                            psychology
+                          </span>
+                        </div>
+
+                        <h3 class="mt-8 text-2xl font-extrabold">
+                          Intelligent triage that reduced response time.
+                        </h3>
+
+                        <p class="mt-3 text-sm leading-6 text-slate-400">
+                          Secure patient workflow, classification and escalation
+                          automation.
+                        </p>
+
+                        <div
+                          class="mt-7 flex items-center justify-between rounded-2xl border border-white/10 bg-white/5 p-4"
+                        >
+                          <div>
+                            <div class="font-display text-3xl font-extrabold">
+                              -67%
+                            </div>
+
+                            <div
+                              class="text-[8px] uppercase tracking-[.15em] text-slate-500"
+                            >
+                              response time
+                            </div>
+                          </div>
+
+                          <span
+                            class="rounded-full bg-emerald-500/10 px-3 py-1.5 text-[9px] font-bold text-emerald-300"
+                          >
+                            PRODUCTION
+                          </span>
+                        </div>
+                      </article>
                     </div>
                   </div>
-                  <span
-                    class="rounded-full bg-emerald-500/10 px-3 py-1.5 text-[9px] font-bold text-emerald-300"
-                    >PRODUCTION</span
-                  >
                 </div>
-              </article>
+
+                <!-- ================================================= 
+               SLIDE 2
+          ================================================== -->
+                <div class="w-full shrink-0">
+                  <div class="grid gap-5 lg:grid-cols-12">
+                    <!-- MAIN -->
+                    <article
+                      class="group lg:col-span-7 overflow-hidden rounded-[2rem] border border-slate-200 bg-[#f7f9fc] dark:border-white/10 dark:bg-slate-900"
+                    >
+                      <div
+                        class="relative h-[330px] overflow-hidden bg-gradient-to-br from-[#0b1220] via-[#101d39] to-[#082032] p-6 sm:h-[390px]"
+                      >
+                        <div
+                          class="absolute -right-20 -top-20 h-72 w-72 rounded-full bg-blue-500/20 blur-3xl"
+                        ></div>
+
+                        <div
+                          class="relative h-full rounded-[1.5rem] border border-white/10 bg-[#07111e]/80 p-4 shadow-panel backdrop-blur"
+                        >
+                          <div
+                            class="flex items-center justify-between font-mono text-[8px] text-slate-500"
+                          >
+                            <span>GROWTHOS / PERFORMANCE</span>
+                            <span class="text-emerald-300">LIVE</span>
+                          </div>
+
+                          <div class="mt-5 grid grid-cols-3 gap-2">
+                            <div class="rounded-xl bg-white/5 p-3">
+                              <div class="text-[8px] text-slate-500">Users</div>
+
+                              <div
+                                class="mt-2 font-display text-2xl font-extrabold text-white"
+                              >
+                                84.2K
+                              </div>
+                            </div>
+
+                            <div class="rounded-xl bg-white/5 p-3">
+                              <div class="text-[8px] text-slate-500">
+                                Growth
+                              </div>
+
+                              <div
+                                class="mt-2 font-display text-2xl font-extrabold text-emerald-300"
+                              >
+                                34.8%
+                              </div>
+                            </div>
+
+                            <div class="rounded-xl bg-white/5 p-3">
+                              <div class="text-[8px] text-slate-500">
+                                Health
+                              </div>
+
+                              <div
+                                class="mt-2 font-display text-2xl font-extrabold text-cyan-300"
+                              >
+                                98%
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="mt-3 grid grid-cols-[1.5fr_1fr] gap-2">
+                            <div class="rounded-xl bg-white/5 p-4">
+                              <div class="text-[8px] text-slate-500">
+                                Performance curve
+                              </div>
+
+                              <div class="mt-4 h-24">
+                                <svg
+                                  viewBox="0 0 280 100"
+                                  class="h-full w-full"
+                                  fill="none"
+                                >
+                                  <path
+                                    d="M4 86C28 82 32 70 54 72C78 74 82 52 107 57C132 62 135 45 160 48C187 52 190 25 214 31C235 36 246 17 276 9"
+                                    stroke="#4f8cff"
+                                    stroke-width="4"
+                                    stroke-linecap="round"
+                                  />
+
+                                  <path
+                                    d="M4 86C28 82 32 70 54 72C78 74 82 52 107 57C132 62 135 45 160 48C187 52 190 25 214 31C235 36 246 17 276 9V100H4Z"
+                                    fill="url(#g2)"
+                                    opacity=".16"
+                                  />
+
+                                  <defs>
+                                    <linearGradient
+                                      id="g2"
+                                      x1="0"
+                                      y1="0"
+                                      x2="0"
+                                      y2="1"
+                                    >
+                                      <stop stop-color="#4f8cff" />
+                                      <stop
+                                        offset="1"
+                                        stop-color="#4f8cff"
+                                        stop-opacity="0"
+                                      />
+                                    </linearGradient>
+                                  </defs>
+                                </svg>
+                              </div>
+                            </div>
+
+                            <div class="grid gap-2">
+                              <div class="rounded-xl bg-white/5 p-4">
+                                <div class="text-[8px] text-slate-500">
+                                  Conversion
+                                </div>
+
+                                <div
+                                  class="mt-2 font-display text-xl font-extrabold text-white"
+                                >
+                                  +24.6%
+                                </div>
+                              </div>
+
+                              <div class="rounded-xl bg-white/5 p-4">
+                                <div class="text-[8px] text-slate-500">
+                                  Campaigns
+                                </div>
+
+                                <div
+                                  class="mt-2 font-display text-xl font-extrabold text-white"
+                                >
+                                  126
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="p-6 sm:p-7">
+                        <div
+                          class="text-[9px] font-bold uppercase tracking-[.18em] text-blue-600"
+                        >
+                          SaaS · Growth platform
+                        </div>
+
+                        <h3 class="mt-3 text-2xl font-extrabold">
+                          A growth platform built around real-time intelligence.
+                        </h3>
+
+                        <p
+                          class="mt-3 max-w-2xl text-sm leading-6 text-slate-600 dark:text-slate-400"
+                        >
+                          Connected product analytics, campaign intelligence and
+                          automated growth workflows.
+                        </p>
+
+                        <div class="mt-6 flex flex-wrap gap-2">
+                          <span
+                            class="rounded-full bg-slate-100 px-3 py-1.5 font-mono text-[9px] text-slate-500 dark:bg-white/5"
+                          >
+                            Next.js
+                          </span>
+
+                          <span
+                            class="rounded-full bg-slate-100 px-3 py-1.5 font-mono text-[9px] text-slate-500 dark:bg-white/5"
+                          >
+                            Laravel
+                          </span>
+
+                          <span
+                            class="rounded-full bg-slate-100 px-3 py-1.5 font-mono text-[9px] text-slate-500 dark:bg-white/5"
+                          >
+                            AWS
+                          </span>
+
+                          <span
+                            class="rounded-full bg-slate-100 px-3 py-1.5 font-mono text-[9px] text-slate-500 dark:bg-white/5"
+                          >
+                            Analytics
+                          </span>
+                        </div>
+                      </div>
+                    </article>
+
+                    <!-- RIGHT CARDS -->
+                    <div class="grid gap-5 lg:col-span-5">
+                      <article
+                        class="group rounded-[2rem] border border-slate-200 bg-[#f7f9fc] p-6 dark:border-white/10 dark:bg-slate-900"
+                      >
+                        <div class="flex items-start justify-between">
+                          <div
+                            class="text-[9px] font-bold uppercase tracking-[.18em] text-cyan-600"
+                          >
+                            Fintech · Payments
+                          </div>
+
+                          <span class="material-symbols-outlined text-cyan-600">
+                            payments
+                          </span>
+                        </div>
+
+                        <h3 class="mt-8 text-2xl font-extrabold">
+                          Payment infrastructure designed for scale.
+                        </h3>
+
+                        <p
+                          class="mt-3 text-sm leading-6 text-slate-600 dark:text-slate-400"
+                        >
+                          Secure payment flows, reporting and reconciliation
+                          built for growing businesses.
+                        </p>
+
+                        <div class="mt-7 grid grid-cols-3 gap-2">
+                          <div
+                            class="rounded-xl bg-white p-3 text-center shadow-sm dark:bg-white/5"
+                          >
+                            <div class="text-lg font-extrabold">4.2×</div>
+                            <div class="text-[8px] text-slate-400">faster</div>
+                          </div>
+
+                          <div
+                            class="rounded-xl bg-white p-3 text-center shadow-sm dark:bg-white/5"
+                          >
+                            <div class="text-lg font-extrabold">72%</div>
+                            <div class="text-[8px] text-slate-400">
+                              automation
+                            </div>
+                          </div>
+
+                          <div
+                            class="rounded-xl bg-white p-3 text-center shadow-sm dark:bg-white/5"
+                          >
+                            <div class="text-lg font-extrabold">99.9%</div>
+                            <div class="text-[8px] text-slate-400">uptime</div>
+                          </div>
+                        </div>
+                      </article>
+
+                      <article
+                        class="group rounded-[2rem] border border-slate-200 bg-slate-950 p-6 text-white dark:border-white/10"
+                      >
+                        <div class="flex items-start justify-between">
+                          <div
+                            class="text-[9px] font-bold uppercase tracking-[.18em] text-indigo-300"
+                          >
+                            AI · Automation
+                          </div>
+
+                          <span
+                            class="material-symbols-outlined text-indigo-300"
+                          >
+                            smart_toy
+                          </span>
+                        </div>
+
+                        <h3 class="mt-8 text-2xl font-extrabold">
+                          Intelligent automation for complex operations.
+                        </h3>
+
+                        <p class="mt-3 text-sm leading-6 text-slate-400">
+                          AI-assisted workflows that reduce repetitive work and
+                          accelerate operational decisions.
+                        </p>
+
+                        <div
+                          class="mt-7 flex items-center justify-between rounded-2xl border border-white/10 bg-white/5 p-4"
+                        >
+                          <div>
+                            <div class="font-display text-3xl font-extrabold">
+                              -58%
+                            </div>
+
+                            <div
+                              class="text-[8px] uppercase tracking-[.15em] text-slate-500"
+                            >
+                              manual work
+                            </div>
+                          </div>
+
+                          <span
+                            class="rounded-full bg-emerald-500/10 px-3 py-1.5 text-[9px] font-bold text-emerald-300"
+                          >
+                            PRODUCTION
+                          </span>
+                        </div>
+                      </article>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- ================================================= 
+               SLIDE 3
+          ================================================== -->
+                <div class="w-full shrink-0">
+                  <div class="grid gap-5 lg:grid-cols-12">
+                    <!-- MAIN -->
+                    <article
+                      class="group lg:col-span-7 overflow-hidden rounded-[2rem] border border-slate-200 bg-[#f7f9fc] dark:border-white/10 dark:bg-slate-900"
+                    >
+                      <div
+                        class="relative h-[330px] overflow-hidden bg-gradient-to-br from-[#0b1220] via-[#101d39] to-[#082032] p-6 sm:h-[390px]"
+                      >
+                        <div
+                          class="absolute -right-20 -top-20 h-72 w-72 rounded-full bg-blue-500/20 blur-3xl"
+                        ></div>
+
+                        <div
+                          class="relative h-full rounded-[1.5rem] border border-white/10 bg-[#07111e]/80 p-4 shadow-panel backdrop-blur"
+                        >
+                          <div
+                            class="flex items-center justify-between font-mono text-[8px] text-slate-500"
+                          >
+                            <span>CREATIVE / EXPERIENCE HUB</span>
+                            <span class="text-emerald-300">LIVE</span>
+                          </div>
+
+                          <div class="mt-5 grid grid-cols-3 gap-2">
+                            <div class="rounded-xl bg-white/5 p-3">
+                              <div class="text-[8px] text-slate-500">
+                                Projects
+                              </div>
+
+                              <div
+                                class="mt-2 font-display text-2xl font-extrabold text-white"
+                              >
+                                148
+                              </div>
+                            </div>
+
+                            <div class="rounded-xl bg-white/5 p-3">
+                              <div class="text-[8px] text-slate-500">
+                                Clients
+                              </div>
+
+                              <div
+                                class="mt-2 font-display text-2xl font-extrabold text-emerald-300"
+                              >
+                                42
+                              </div>
+                            </div>
+
+                            <div class="rounded-xl bg-white/5 p-3">
+                              <div class="text-[8px] text-slate-500">
+                                Rating
+                              </div>
+
+                              <div
+                                class="mt-2 font-display text-2xl font-extrabold text-cyan-300"
+                              >
+                                4.9
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="mt-3 grid grid-cols-[1.5fr_1fr] gap-2">
+                            <div class="rounded-xl bg-white/5 p-4">
+                              <div class="text-[8px] text-slate-500">
+                                Engagement curve
+                              </div>
+
+                              <div class="mt-4 h-24">
+                                <svg
+                                  viewBox="0 0 280 100"
+                                  class="h-full w-full"
+                                  fill="none"
+                                >
+                                  <path
+                                    d="M4 86C28 82 32 70 54 72C78 74 82 52 107 57C132 62 135 45 160 48C187 52 190 25 214 31C235 36 246 17 276 9"
+                                    stroke="#4f8cff"
+                                    stroke-width="4"
+                                    stroke-linecap="round"
+                                  />
+
+                                  <path
+                                    d="M4 86C28 82 32 70 54 72C78 74 82 52 107 57C132 62 135 45 160 48C187 52 190 25 214 31C235 36 246 17 276 9V100H4Z"
+                                    fill="url(#g3)"
+                                    opacity=".16"
+                                  />
+
+                                  <defs>
+                                    <linearGradient
+                                      id="g3"
+                                      x1="0"
+                                      y1="0"
+                                      x2="0"
+                                      y2="1"
+                                    >
+                                      <stop stop-color="#4f8cff" />
+                                      <stop
+                                        offset="1"
+                                        stop-color="#4f8cff"
+                                        stop-opacity="0"
+                                      />
+                                    </linearGradient>
+                                  </defs>
+                                </svg>
+                              </div>
+                            </div>
+
+                            <div class="grid gap-2">
+                              <div class="rounded-xl bg-white/5 p-4">
+                                <div class="text-[8px] text-slate-500">
+                                  Engagement
+                                </div>
+
+                                <div
+                                  class="mt-2 font-display text-xl font-extrabold text-white"
+                                >
+                                  +38.4%
+                                </div>
+                              </div>
+
+                              <div class="rounded-xl bg-white/5 p-4">
+                                <div class="text-[8px] text-slate-500">
+                                  Launches
+                                </div>
+
+                                <div
+                                  class="mt-2 font-display text-xl font-extrabold text-white"
+                                >
+                                  32
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="p-6 sm:p-7">
+                        <div
+                          class="text-[9px] font-bold uppercase tracking-[.18em] text-blue-600"
+                        >
+                          Creative · Digital experience
+                        </div>
+
+                        <h3 class="mt-3 text-2xl font-extrabold">
+                          Digital experiences built to make brands memorable.
+                        </h3>
+
+                        <p
+                          class="mt-3 max-w-2xl text-sm leading-6 text-slate-600 dark:text-slate-400"
+                        >
+                          High-performance digital products combining strategy,
+                          storytelling and modern engineering.
+                        </p>
+
+                        <div class="mt-6 flex flex-wrap gap-2">
+                          <span
+                            class="rounded-full bg-slate-100 px-3 py-1.5 font-mono text-[9px] text-slate-500 dark:bg-white/5"
+                          >
+                            React
+                          </span>
+
+                          <span
+                            class="rounded-full bg-slate-100 px-3 py-1.5 font-mono text-[9px] text-slate-500 dark:bg-white/5"
+                          >
+                            Node.js
+                          </span>
+
+                          <span
+                            class="rounded-full bg-slate-100 px-3 py-1.5 font-mono text-[9px] text-slate-500 dark:bg-white/5"
+                          >
+                            Cloud
+                          </span>
+
+                          <span
+                            class="rounded-full bg-slate-100 px-3 py-1.5 font-mono text-[9px] text-slate-500 dark:bg-white/5"
+                          >
+                            UX
+                          </span>
+                        </div>
+                      </div>
+                    </article>
+
+                    <!-- RIGHT CARDS -->
+                    <div class="grid gap-5 lg:col-span-5">
+                      <article
+                        class="group rounded-[2rem] border border-slate-200 bg-[#f7f9fc] p-6 dark:border-white/10 dark:bg-slate-900"
+                      >
+                        <div class="flex items-start justify-between">
+                          <div
+                            class="text-[9px] font-bold uppercase tracking-[.18em] text-cyan-600"
+                          >
+                            Travel · Experience
+                          </div>
+
+                          <span class="material-symbols-outlined text-cyan-600">
+                            travel_explore
+                          </span>
+                        </div>
+
+                        <h3 class="mt-8 text-2xl font-extrabold">
+                          A travel platform designed for better discovery.
+                        </h3>
+
+                        <p
+                          class="mt-3 text-sm leading-6 text-slate-600 dark:text-slate-400"
+                        >
+                          A modern travel experience designed around discovery,
+                          booking and memorable journeys.
+                        </p>
+
+                        <div class="mt-7 grid grid-cols-3 gap-2">
+                          <div
+                            class="rounded-xl bg-white p-3 text-center shadow-sm dark:bg-white/5"
+                          >
+                            <div class="text-lg font-extrabold">3.4×</div>
+                            <div class="text-[8px] text-slate-400">
+                              discovery
+                            </div>
+                          </div>
+
+                          <div
+                            class="rounded-xl bg-white p-3 text-center shadow-sm dark:bg-white/5"
+                          >
+                            <div class="text-lg font-extrabold">48%</div>
+                            <div class="text-[8px] text-slate-400">
+                              bookings
+                            </div>
+                          </div>
+
+                          <div
+                            class="rounded-xl bg-white p-3 text-center shadow-sm dark:bg-white/5"
+                          >
+                            <div class="text-lg font-extrabold">24/7</div>
+                            <div class="text-[8px] text-slate-400">support</div>
+                          </div>
+                        </div>
+                      </article>
+
+                      <article
+                        class="group rounded-[2rem] border border-slate-200 bg-slate-950 p-6 text-white dark:border-white/10"
+                      >
+                        <div class="flex items-start justify-between">
+                          <div
+                            class="text-[9px] font-bold uppercase tracking-[.18em] text-indigo-300"
+                          >
+                            Security · Cloud
+                          </div>
+
+                          <span
+                            class="material-symbols-outlined text-indigo-300"
+                          >
+                            shield
+                          </span>
+                        </div>
+
+                        <h3 class="mt-8 text-2xl font-extrabold">
+                          Cloud infrastructure built for secure growth.
+                        </h3>
+
+                        <p class="mt-3 text-sm leading-6 text-slate-400">
+                          Reliable cloud architecture designed for security,
+                          scale and high availability.
+                        </p>
+
+                        <div
+                          class="mt-7 flex items-center justify-between rounded-2xl border border-white/10 bg-white/5 p-4"
+                        >
+                          <div>
+                            <div class="font-display text-3xl font-extrabold">
+                              99.99%
+                            </div>
+
+                            <div
+                              class="text-[8px] uppercase tracking-[.15em] text-slate-500"
+                            >
+                              availability
+                            </div>
+                          </div>
+
+                          <span
+                            class="rounded-full bg-emerald-500/10 px-3 py-1.5 text-[9px] font-bold text-emerald-300"
+                          >
+                            PRODUCTION
+                          </span>
+                        </div>
+                      </article>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ===================================================== 
+           DOTS
+      ====================================================== -->
+            <div class="mt-8 flex items-center justify-center gap-2">
+              <button
+                type="button"
+                data-work-dot="0"
+                aria-label="Go to project 1"
+                class="h-2.5 w-8 rounded-full bg-gradient-to-r from-blue-600 to-cyan-500 transition-all duration-300"
+              ></button>
+
+              <button
+                type="button"
+                data-work-dot="1"
+                aria-label="Go to project 2"
+                class="h-2.5 w-2.5 rounded-full bg-slate-300 transition-all duration-300 dark:bg-slate-700"
+              ></button>
+
+              <button
+                type="button"
+                data-work-dot="2"
+                aria-label="Go to project 3"
+                class="h-2.5 w-2.5 rounded-full bg-slate-300 transition-all duration-300 dark:bg-slate-700"
+              ></button>
             </div>
           </div>
         </div>
       </section>
+
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          const slider = document.getElementById("work-slider");
+          const dots = document.querySelectorAll("[data-work-dot]");
+
+          if (!slider) return;
+
+          let currentSlide = 0;
+          const totalSlides = slider.children.length;
+
+          function updateSlider() {
+            slider.style.transform = `translateX(-${currentSlide * 100}%)`;
+
+            dots.forEach((dot, index) => {
+              if (index === currentSlide) {
+                dot.classList.remove(
+                  "w-2.5",
+                  "bg-slate-300",
+                  "dark:bg-slate-700",
+                );
+
+                dot.classList.add(
+                  "w-8",
+                  "bg-gradient-to-r",
+                  "from-blue-600",
+                  "to-cyan-500",
+                );
+              } else {
+                dot.classList.remove(
+                  "w-8",
+                  "bg-gradient-to-r",
+                  "from-blue-600",
+                  "to-cyan-500",
+                );
+
+                dot.classList.add("w-2.5", "bg-slate-300", "dark:bg-slate-700");
+              }
+            });
+          }
+
+          function goNext() {
+            currentSlide++;
+
+            if (currentSlide >= totalSlides) {
+              currentSlide = 0;
+            }
+
+            updateSlider();
+          }
+
+          /* =====================================================
+       AUTO SLIDE
+       4 SECONDS
+    ====================================================== */
+
+          let autoSlide = setInterval(goNext, 4000);
+
+          /* =====================================================
+       DOT CLICK
+    ====================================================== */
+
+          dots.forEach((dot) => {
+            dot.addEventListener("click", function () {
+              currentSlide = Number(this.dataset.workDot);
+
+              updateSlider();
+
+              clearInterval(autoSlide);
+
+              autoSlide = setInterval(goNext, 4000);
+            });
+          });
+
+          /* =====================================================
+       TOUCH SWIPE
+    ====================================================== */
+
+          let touchStartX = 0;
+          let touchEndX = 0;
+
+          slider.addEventListener(
+            "touchstart",
+            function (event) {
+              touchStartX = event.changedTouches[0].screenX;
+            },
+            {
+              passive: true,
+            },
+          );
+
+          slider.addEventListener(
+            "touchend",
+            function (event) {
+              touchEndX = event.changedTouches[0].screenX;
+
+              const distance = touchEndX - touchStartX;
+
+              if (Math.abs(distance) < 50) {
+                return;
+              }
+
+              clearInterval(autoSlide);
+
+              if (distance < 0) {
+                goNext();
+              } else {
+                currentSlide--;
+
+                if (currentSlide < 0) {
+                  currentSlide = totalSlides - 1;
+                }
+
+                updateSlider();
+              }
+
+              autoSlide = setInterval(goNext, 4000);
+            },
+            {
+              passive: true,
+            },
+          );
+
+          /* Initial */
+          updateSlider();
+        });
+      </script>
 
       <!-- TECHNOLOGY COMMAND CENTER -->
       <section
